@@ -44,7 +44,7 @@ namespace AirHockeyApp
         // MBM pins
         private const int GOAL_SENSOR_PIN_ROBOT = 4;
         private const int GOAL_SENSOR_PIN_HUMAN = 5;
-        
+
         private GpioPin GoalSensorPin_Robot;
         private GpioPin GoalSensorPin_Human;
 
@@ -60,19 +60,19 @@ namespace AirHockeyApp
 
         public Robot()
         {
-            initialize();
+            //initialize();
             AI = new AIHelper(this);
             stepperLock = new object();
         }
 
-        private void initialize()
-        {
-            controller = GpioController.GetDefault();
+        //private void initialize()
+        //{
+        //    controller = GpioController.GetDefault();
 
-            initializeLimitSwitches();
-            initializeMotors();
-            initializeGoalSensors();
-        }
+        //    initializeLimitSwitches();
+        //    initializeMotors();
+        //    initializeGoalSensors();
+        //}
 
         public void MoveMotorsToZero()
         {
@@ -102,10 +102,10 @@ namespace AirHockeyApp
             StepperX.SetCurrentPosition(0);
             StepperY.SetCurrentPosition(0);
 
-            LimitSwitchPin_X1.ValueChanged += LimitSwitchPin_X1_ValueChanged;
-            LimitSwitchPin_X2.ValueChanged += LimitSwitchPin_X2_ValueChanged;
-            LimitSwitchPin_Y1.ValueChanged += LimitSwitchPin_Y1_ValueChanged;
-            LimitSwitchPin_Y2.ValueChanged += LimitSwitchPin_Y2_ValueChanged;
+            //LimitSwitchPin_X1.ValueChanged += LimitSwitchPin_X1_ValueChanged;
+            //LimitSwitchPin_X2.ValueChanged += LimitSwitchPin_X2_ValueChanged;
+            //LimitSwitchPin_Y1.ValueChanged += LimitSwitchPin_Y1_ValueChanged;
+            //LimitSwitchPin_Y2.ValueChanged += LimitSwitchPin_Y2_ValueChanged;
         }
 
         public void Stop()
@@ -230,126 +230,127 @@ namespace AirHockeyApp
 
             MoveToOffset(offset);
         }
-
-        private void initializeMotors()
-        {
-            /* Initialize motor pins */
-
-            MotorStepPin_X = controller.OpenPin(MOTOR_STEP_PIN_X);
-            MotorDirPin_X = controller.OpenPin(MOTOR_DIR_PIN_X);
-            MotorStepPin_Y = controller.OpenPin(MOTOR_STEP_PIN_Y);
-            MotorDirPin_Y = controller.OpenPin(MOTOR_DIR_PIN_Y);
-
-            MotorStepPin_X.Write(GpioPinValue.High);
-            MotorDirPin_X.Write(GpioPinValue.High);
-            MotorStepPin_Y.Write(GpioPinValue.High);
-            MotorDirPin_Y.Write(GpioPinValue.High);
-
-            MotorStepPin_X.SetDriveMode(GpioPinDriveMode.Output);
-            MotorDirPin_X.SetDriveMode(GpioPinDriveMode.Output);
-            MotorStepPin_Y.SetDriveMode(GpioPinDriveMode.Output);
-            MotorDirPin_Y.SetDriveMode(GpioPinDriveMode.Output);
-
-            StepperX = new StepperLib(MotorStepPin_X, MotorDirPin_X, GpioPinValue.Low);
-            StepperY = new StepperLib(MotorStepPin_Y, MotorDirPin_Y, GpioPinValue.High);
-        }
-
-        private void initializeLimitSwitches()
-        {
-            /* Initialize limit switches */
-            LimitSwitchPin_X1 = controller.OpenPin(LIMIT_SWITCH_PIN_X1);
-            LimitSwitchPin_X2 = controller.OpenPin(LIMIT_SWITCH_PIN_X2);
-            LimitSwitchPin_Y1 = controller.OpenPin(LIMIT_SWITCH_PIN_Y1);
-            LimitSwitchPin_Y2 = controller.OpenPin(LIMIT_SWITCH_PIN_Y2);
-
-            // MBM drive modes
-            LimitSwitchPin_X1.SetDriveMode(GpioPinDriveMode.Input);
-            LimitSwitchPin_X2.SetDriveMode(GpioPinDriveMode.Input);
-            LimitSwitchPin_Y1.SetDriveMode(GpioPinDriveMode.Input);
-            LimitSwitchPin_Y2.SetDriveMode(GpioPinDriveMode.Input);
-        }
-
-        private void initializeGoalSensors()
-        {
-            GoalSensorPin_Human = controller.OpenPin(GOAL_SENSOR_PIN_HUMAN);
-            GoalSensorPin_Robot = controller.OpenPin(GOAL_SENSOR_PIN_ROBOT);
-
-            GoalSensorPin_Human.SetDriveMode(GpioPinDriveMode.Input);
-            GoalSensorPin_Robot.SetDriveMode(GpioPinDriveMode.Input);
-
-            GoalSensorPin_Human.ValueChanged += GoalSensorPin_Player_ValueChanged;
-            GoalSensorPin_Robot.ValueChanged += GoalSensorPin_Robot_ValueChanged;
-        }
-
-        private void LimitSwitchPin_Y2_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            // At YMax
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                StepperY.SetCurrentPosition(Config.MAX_MALLET_OFFSET_Y);
-            }
-        }
-
-        private void LimitSwitchPin_Y1_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            // At Y0
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                StepperY.SetCurrentPosition(0);
-            }
-        }
-
-        private void LimitSwitchPin_X2_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            // At XMax
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                StepperX.SetCurrentPosition(Config.MAX_MALLET_OFFSET_X);
-            }
-        }
-
-        private void LimitSwitchPin_X1_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            // At X0
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                StepperX.SetCurrentPosition(0);
-            }
-        }
-
-        private void GoalSensorPin_Robot_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                OnRobotGoalSensorTriggered(new EventArgs());
-            }
-        }
-
-        private void GoalSensorPin_Player_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
-        {
-            if (args.Edge == GpioPinEdge.FallingEdge)
-            {
-                OnHumanGoalSensorTriggered(new EventArgs());
-            }
-        }
-
-        protected virtual void OnRobotGoalSensorTriggered(EventArgs e)
-        {
-            EventHandler<EventArgs> handler = RobotGoalSensorTriggered;
-            if (handler != null)
-            {
-                handler(this, e);
-            }
-        }
-
-        protected virtual void OnHumanGoalSensorTriggered(EventArgs e)
-        {
-            EventHandler<EventArgs> handler = HumanGoalSensorTriggered;
-            if (handler != null)
-            {
-                handler(this, e);
-            }
-        }
-
     }
 }
+//        private void initializeMotors()
+//        {
+//            /* Initialize motor pins */
+
+//            MotorStepPin_X = controller.OpenPin(MOTOR_STEP_PIN_X);
+//            MotorDirPin_X = controller.OpenPin(MOTOR_DIR_PIN_X);
+//            MotorStepPin_Y = controller.OpenPin(MOTOR_STEP_PIN_Y);
+//            MotorDirPin_Y = controller.OpenPin(MOTOR_DIR_PIN_Y);
+
+//            MotorStepPin_X.Write(GpioPinValue.High);
+//            MotorDirPin_X.Write(GpioPinValue.High);
+//            MotorStepPin_Y.Write(GpioPinValue.High);
+//            MotorDirPin_Y.Write(GpioPinValue.High);
+
+//            MotorStepPin_X.SetDriveMode(GpioPinDriveMode.Output);
+//            MotorDirPin_X.SetDriveMode(GpioPinDriveMode.Output);
+//            MotorStepPin_Y.SetDriveMode(GpioPinDriveMode.Output);
+//            MotorDirPin_Y.SetDriveMode(GpioPinDriveMode.Output);
+
+//            StepperX = new StepperLib(MotorStepPin_X, MotorDirPin_X, GpioPinValue.Low);
+//            StepperY = new StepperLib(MotorStepPin_Y, MotorDirPin_Y, GpioPinValue.High);
+//        }
+
+//        private void initializeLimitSwitches()
+//        {
+//            /* Initialize limit switches */
+//            LimitSwitchPin_X1 = controller.OpenPin(LIMIT_SWITCH_PIN_X1);
+//            LimitSwitchPin_X2 = controller.OpenPin(LIMIT_SWITCH_PIN_X2);
+//            LimitSwitchPin_Y1 = controller.OpenPin(LIMIT_SWITCH_PIN_Y1);
+//            LimitSwitchPin_Y2 = controller.OpenPin(LIMIT_SWITCH_PIN_Y2);
+
+//            // MBM drive modes
+//            LimitSwitchPin_X1.SetDriveMode(GpioPinDriveMode.Input);
+//            LimitSwitchPin_X2.SetDriveMode(GpioPinDriveMode.Input);
+//            LimitSwitchPin_Y1.SetDriveMode(GpioPinDriveMode.Input);
+//            LimitSwitchPin_Y2.SetDriveMode(GpioPinDriveMode.Input);
+//        }
+
+//        private void initializeGoalSensors()
+//        {
+//            GoalSensorPin_Human = controller.OpenPin(GOAL_SENSOR_PIN_HUMAN);
+//            GoalSensorPin_Robot = controller.OpenPin(GOAL_SENSOR_PIN_ROBOT);
+
+//            GoalSensorPin_Human.SetDriveMode(GpioPinDriveMode.Input);
+//            GoalSensorPin_Robot.SetDriveMode(GpioPinDriveMode.Input);
+
+//            GoalSensorPin_Human.ValueChanged += GoalSensorPin_Player_ValueChanged;
+//            GoalSensorPin_Robot.ValueChanged += GoalSensorPin_Robot_ValueChanged;
+//        }
+
+//        private void LimitSwitchPin_Y2_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            // At YMax
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                StepperY.SetCurrentPosition(Config.MAX_MALLET_OFFSET_Y);
+//            }
+//        }
+
+//        private void LimitSwitchPin_Y1_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            // At Y0
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                StepperY.SetCurrentPosition(0);
+//            }
+//        }
+
+//        private void LimitSwitchPin_X2_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            // At XMax
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                StepperX.SetCurrentPosition(Config.MAX_MALLET_OFFSET_X);
+//            }
+//        }
+
+//        private void LimitSwitchPin_X1_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            // At X0
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                StepperX.SetCurrentPosition(0);
+//            }
+//        }
+
+//        private void GoalSensorPin_Robot_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                OnRobotGoalSensorTriggered(new EventArgs());
+//            }
+//        }
+
+//        private void GoalSensorPin_Player_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs args)
+//        {
+//            if (args.Edge == GpioPinEdge.FallingEdge)
+//            {
+//                OnHumanGoalSensorTriggered(new EventArgs());
+//            }
+//        }
+
+//        protected virtual void OnRobotGoalSensorTriggered(EventArgs e)
+//        {
+//            EventHandler<EventArgs> handler = RobotGoalSensorTriggered;
+//            if (handler != null)
+//            {
+//                handler(this, e);
+//            }
+//        }
+
+//        protected virtual void OnHumanGoalSensorTriggered(EventArgs e)
+//        {
+//            EventHandler<EventArgs> handler = HumanGoalSensorTriggered;
+//            if (handler != null)
+//            {
+//                handler(this, e);
+//            }
+//        }
+
+//    }
+//}

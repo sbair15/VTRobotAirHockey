@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
 using System;
+using System.Windows;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace AirHockeyApp
     {
         GameMode gameMode = GameMode.Diagnostics;
 
-        PixyCam pixyCam;
+        //PixyCam pixyCam;
         Robot robot;
 
         Line trajectoryLine;
@@ -51,7 +52,7 @@ namespace AirHockeyApp
 
             CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
 
-            pixyCam = new PixyCam();
+            //pixyCam = new PixyCam();
             robot = new Robot();
 
             // Initialize robot's max speed and acceleration
@@ -147,13 +148,14 @@ namespace AirHockeyApp
 
             mainCanvas.Visibility = gameCanvas.Visibility = Visibility.Collapsed;
 
-            await pixyCam.Initialize();
+            //await pixyCam.Initialize();
             outputTextBlock.Text = "Initialized" + Environment.NewLine;
 
             switch (gameMode)
             {
                 case GameMode.Test:
                     mainCanvas.Visibility = Visibility.Visible;
+                    //Console.WriteLine("In Test Game Mode \r\n");
                     robot.StepperX.Debug = true;
                     robot.StepperY.Debug = true;
                     mainCanvas.PointerMoved += MainCanvas_PointerMoved;
@@ -193,24 +195,24 @@ namespace AirHockeyApp
                 robot.Close();
             }
 
-            if (pixyCam != null)
-            {
-                pixyCam.Close();
-            }
+            //if (pixyCam != null)
+            //{
+            //    pixyCam.Close();
+            //}
         }
 
-        private void warmUp()
-        {
-            try
-            {
-                // Move robot to starting position at table corner
-                showMessage("Resetting motors...");
-                robot.MoveMotorsToZero();
+        //private void warmUp()
+        //{
+        //    try
+        //    {
+        //        // Move robot to starting position at table corner
+        //        showMessage("Resetting motors...");
+        //        robot.MoveMotorsToZero();
 
-                //runFourPointTest();
-            }
-            catch (Exception) { }
-        }
+        //        //runFourPointTest();
+        //    }
+        //    catch (Exception) { }
+        //}
 
         private void runFourPointTest()
         {
@@ -371,7 +373,7 @@ namespace AirHockeyApp
                 if (gameMode != GameMode.Diagnostics)
                 {
                     showMessage("Warming up...");
-                    warmUp();
+                    //warmUp();
                     hideMessage();
                 }
 
@@ -396,14 +398,14 @@ namespace AirHockeyApp
                     currentTimeMilliseconds = Global.Stopwatch.ElapsedMilliseconds;
 
                     // Check for new block every 20 ms, since the camera is 50hz
-                    if ((currentTimeMilliseconds - previousTimeMilliseconds) > 20 || previousTimeMilliseconds == -1)
-                    {
-                        // Start new thread to poll camera so that we reduce the chance of getting jitter
+                    //if ((currentTimeMilliseconds - previousTimeMilliseconds) > 20 || previousTimeMilliseconds == -1)
+                    //{
+                    /*    // Start new thread to poll camera so that we reduce the chance of getting jitter
                         ThreadPool.RunAsync((s1) =>
                         {
                             try
                             {
-                                var blocks = pixyCam.GetBlocks(10);
+                               // var blocks = pixyCam.GetBlocks(10);
 
                                 if (blocks != null && blocks.Count > 0)
                                 {
@@ -432,8 +434,9 @@ namespace AirHockeyApp
                             }
                         }, WorkItemPriority.Low);
 
-                        previousTimeMilliseconds = currentTimeMilliseconds;
-                    }
+                       */
+                    previousTimeMilliseconds = currentTimeMilliseconds;
+
 
                     // Run the motors
                     xMoved = robot.StepperX.Run();
@@ -446,21 +449,21 @@ namespace AirHockeyApp
                         robot.AI.Mode = RobotMode.Defense;
                     }
                 }
-            }, WorkItemPriority.High);
+            });
         }
 
-        private Point getPuckPosition(ObjectBlock block)
-        {
-            if (block != null)
-            {
-                if (block.Signature == 1 && block.Width >= 5 && block.Height >= 5)
-                {
-                    return CoordinateHelper.TranslatePoint(block.X, block.Y);
-                }
-            }
+        //private Point getPuckPosition(ObjectBlock block)
+        //{
+        //    if (block != null)
+        //    {
+        //        if (block.Signature == 1 && block.Width >= 5 && block.Height >= 5)
+        //        {
+        //            return CoordinateHelper.TranslatePoint(block.X, block.Y);
+        //        }
+        //    }
 
-            return CoordinateHelper.INVALID_POINT;
-        }
+        //    return CoordinateHelper.INVALID_POINT;
+        //}
 
         #region UI Functions
 
@@ -666,7 +669,7 @@ namespace AirHockeyApp
         private void slider_ValueChanged(object sender, Windows.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs e)
         {
             byte brightByte = Convert.ToByte(e.NewValue);
-            pixyCam.SetBrightness(brightByte);
+            //pixyCam.SetBrightness(brightByte);
             brightnessTextBlock.Text = brightByte.ToString();
         }
 

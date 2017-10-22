@@ -1,0 +1,2 @@
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyApp\AirHockeyApp.csproj;arm
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\AirHockeyHelper.csproj;arm

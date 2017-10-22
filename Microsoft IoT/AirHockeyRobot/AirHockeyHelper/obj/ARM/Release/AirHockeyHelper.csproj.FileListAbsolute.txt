@@ -1,0 +1,17 @@
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\bin\ARM\Release\AirHockeyHelper.dll
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\bin\ARM\Release\AirHockeyHelper.pdb
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\bin\ARM\Release\AirHockeyHelper.pri
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\AirHockeyHelper.csproj.CoreCompileInputs.cache
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\AirHockeyHelper.dll
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\AirHockeyHelper.pdb
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\priconfig.xml
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\priconfig.xml.intermediate
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\layout.resfiles
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\layout.resfiles.intermediate
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\resources.resfiles
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\resources.resfiles.intermediate
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\pri.resfiles
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\pri.resfiles.intermediate
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\qualifiers.txt
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\qualifiers.txt.intermediate
+C:\Users\lxswf_000\Desktop\VTRobotAirHockey-Dev\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt

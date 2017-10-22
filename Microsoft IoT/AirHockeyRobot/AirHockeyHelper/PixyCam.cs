@@ -6,7 +6,7 @@ using Windows.Devices.Spi;
 
 namespace AirHockeyHelper
 {
-    public class PixyCamEventArgs : EventArgs
+    /*public class PixyCamEventArgs : EventArgs
     {
         public ObjectBlock Block;
     }
@@ -284,4 +284,5 @@ namespace AirHockeyHelper
                 "Y: " + Y;
         }
     }
+    */
 }
