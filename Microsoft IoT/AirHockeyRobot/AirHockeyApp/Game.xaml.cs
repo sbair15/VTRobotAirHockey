@@ -37,7 +37,7 @@ namespace AirHockeyApp
         List<Line> lineList;
         List<Ellipse> dotList;
 
-        private long robotScore = 0, playerScore = 0;
+        private long robotScore = 0,  playerScore = 0;
 
         private double virtualWidth = 1366, virtualHeight = 766;
 
