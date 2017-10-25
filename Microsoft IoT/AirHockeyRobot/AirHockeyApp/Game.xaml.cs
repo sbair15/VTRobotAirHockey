@@ -50,17 +50,17 @@ namespace AirHockeyApp
         {
             this.InitializeComponent();
 
-            CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
+          //  CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
 
             //pixyCam = new PixyCam();
             robot = new Robot();
 
             // Initialize robot's max speed and acceleration
-            robot.StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
-            robot.StepperY.MaxSpeed = Config.MOTOR_Y_MAX_SPEED;
+         //   robot.StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
+        //    robot.StepperY.MaxSpeed = Config.MOTOR_Y_MAX_SPEED;
 
-            robot.StepperX.Acceleration = Config.MOTOR_X_ACCELERATION;
-            robot.StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
+         //   robot.StepperX.Acceleration = Config.MOTOR_X_ACCELERATION;
+         //   robot.StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
 
             // Adds event listeners for when a goal is scored
             robot.HumanGoalSensorTriggered += Robot_HumanGoalSensorTriggered;
@@ -156,15 +156,15 @@ namespace AirHockeyApp
                 case GameMode.Test:
                     mainCanvas.Visibility = Visibility.Visible;
                     //Console.WriteLine("In Test Game Mode \r\n");
-                    robot.StepperX.Debug = true;
-                    robot.StepperY.Debug = true;
+                  //  robot.StepperX.Debug = true;
+                 //   robot.StepperY.Debug = true;
                     mainCanvas.PointerMoved += MainCanvas_PointerMoved;
                     startTestThread();
                     break;
                 case GameMode.Diagnostics:
                     mainCanvas.Visibility = Visibility.Visible;
-                    robot.StepperX.Debug = true;
-                    robot.StepperY.Debug = true;
+               //     robot.StepperX.Debug = true;
+              //      robot.StepperY.Debug = true;
                     startProcessingThread();
                     break;
                 case GameMode.Game:
@@ -214,7 +214,7 @@ namespace AirHockeyApp
         //    catch (Exception) { }
         //}
 
-        private void runFourPointTest()
+   /*     private void runFourPointTest()
         {
             Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
             {
@@ -230,9 +230,9 @@ namespace AirHockeyApp
                 robot.MoveToOffset(new Point(0, 0));
                 robot.RunToPosition();
             });
-        }
+        }*/
 
-        private void runDecisionThread(Point puckPosition)
+      /*  private void runDecisionThread(Point puckPosition)
         {
             ThreadPool.RunAsync((s) =>
             {
@@ -280,7 +280,7 @@ namespace AirHockeyApp
                     }
                 }
             });
-        }
+        }*/
 
         #region Test Methods
 
@@ -299,15 +299,15 @@ namespace AirHockeyApp
                 while (!stopThread)
                 {
                     // Run the motors
-                    robot.StepperX.Run();
-                    robot.StepperY.Run();
+                //    robot.StepperX.Run();
+                //    robot.StepperY.Run();
 
                     // If we're finished moving, go back to defense mode
-                    if (robot.StepperX.DistanceToGo() == 0 && robot.StepperY.DistanceToGo() == 0)
-                    {
-                        robot.AI.DoNotInterrupt = false;
-                        robot.AI.Mode = RobotMode.Defense;
-                    }
+                //    if (robot.StepperX.DistanceToGo() == 0 && robot.StepperY.DistanceToGo() == 0)
+                //    {
+                //        robot.AI.DoNotInterrupt = false;
+               //         robot.AI.Mode = RobotMode.Defense;
+                //    }
                 }
             }, WorkItemPriority.High);
 
@@ -317,7 +317,7 @@ namespace AirHockeyApp
         #endregion
 
         // Draw the UI
-        private void runUIThread()
+    /*    private void runUIThread()
         {
             ThreadPool.RunAsync(async (s) =>
             {
@@ -357,7 +357,7 @@ namespace AirHockeyApp
                     await Task.Delay(1);
                 }
             });
-        }
+        }*/
 
         private void startProcessingThread()
         {
@@ -439,15 +439,15 @@ namespace AirHockeyApp
 
 
                     // Run the motors
-                    xMoved = robot.StepperX.Run();
-                    yMoved = robot.StepperY.Run();
+                  //  xMoved = robot.StepperX.Run();
+                 //   yMoved = robot.StepperY.Run();
 
                     // If we're finished moving, go back to defense mode
-                    if (robot.StepperX.DistanceToGo() == 0 && robot.StepperY.DistanceToGo() == 0)
-                    {
-                        robot.AI.DoNotInterrupt = false;
-                        robot.AI.Mode = RobotMode.Defense;
-                    }
+                 //   if (robot.StepperX.DistanceToGo() == 0 && robot.StepperY.DistanceToGo() == 0)
+                 //   {
+                 //       robot.AI.DoNotInterrupt = false;
+                 //       robot.AI.Mode = RobotMode.Defense;
+                 //   }
                 }
             });
         }
@@ -612,7 +612,7 @@ namespace AirHockeyApp
             });
         }
 
-        private void drawMallet(Point offset)
+     /*   private void drawMallet(Point offset)
         {
             Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
@@ -623,7 +623,7 @@ namespace AirHockeyApp
                 Canvas.SetTop(mallet, malletLoc.Y - mallet.Height / 2);
                 mallet.Visibility = Visibility.Visible;
             });
-        }
+        }*/
 
         private void setOutputText(string text)
         {
@@ -645,13 +645,13 @@ namespace AirHockeyApp
 
         #region UI Event Handlers
 
-        private async void moveMalletButton_Click(object sender, RoutedEventArgs e)
+    /*    private async void moveMalletButton_Click(object sender, RoutedEventArgs e)
         {
             stopThread = true;
             await Task.Delay(500);
             robot.StepperX.RunToNewPosition(0);
             robot.StepperY.RunToNewPosition(0);
-        }
+        }*/
 
         private void homeButton_Click(object sender, RoutedEventArgs e)
         {
