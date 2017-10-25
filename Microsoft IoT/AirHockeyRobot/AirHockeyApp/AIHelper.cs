@@ -167,7 +167,7 @@ namespace AirHockeyApp
             // For speed calculations
             var prevPosition = positionHistory[positionHistory.Count - 2];
             var currPosition = positionHistory.Last();
-
+/*
             // Convert everything to positions (coordinates in the coordinate plane) or offsets (steps for motors)
             Point malletTargetOffset = CoordinateHelper.INVALID_POINT;
             // Mallet offset
@@ -304,7 +304,7 @@ namespace AirHockeyApp
             previousBouncePoints = bouncePoints;
 
             return malletTargetOffset;
-        }
+        }*/
 
         // Handles calculation of center of mass of group of points
         public class CenterOfMass
