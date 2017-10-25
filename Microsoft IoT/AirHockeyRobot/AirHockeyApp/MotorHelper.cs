@@ -4,7 +4,7 @@ using Windows.Foundation;
 
 namespace AirHockeyApp
 {
-    public class MotorHelper
+   /* public class MotorHelper
     {
         // Coordinates when X and Y are at offset 0
         private static Point zeroPoint = new Point(1430, 78);
@@ -63,5 +63,5 @@ namespace AirHockeyApp
         {
             return new Point(GetOffsetXFromCoordinateY(point.Y), GetOffsetYFromCoordinateX(point.X));
         }
-    }
+    }*/
 }
