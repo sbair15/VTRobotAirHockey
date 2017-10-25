@@ -12,7 +12,7 @@ namespace AirHockeyHelper
     // This class needs to be implemented by the user
     public class StepperLib
     {
-       /* public long CurrentPosition;
+        public long CurrentPosition;
         public long TargetPosition;
         public float MaxSpeed;
         public float Acceleration;
@@ -122,5 +122,5 @@ namespace AirHockeyHelper
         {
 
         }
-    }*/
+    }
 }
