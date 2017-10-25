@@ -32,7 +32,7 @@ namespace AirHockeyApp
         /// <param name="x">Raw X-coordinate returned by Pixy camera</param>
         /// <param name="y">Raw Y-coordinate returned by Pixy camera</param>
         /// <returns>Point on the screen</returns>
-        public static Point TranslatePoint(double x, double y)
+     /*   public static Point TranslatePoint(double x, double y)
         {
             if (topQuadraticCoeff.Length < 1 || bottomQuadraticCoeff.Length < 1)
             {
@@ -72,7 +72,7 @@ namespace AirHockeyApp
             }
 
             return translatedPoint;
-        }
+        } */
 
         /// <summary>
         /// Calculate the trajectory given 2 points
