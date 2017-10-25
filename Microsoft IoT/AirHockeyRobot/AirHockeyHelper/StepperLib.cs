@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Windows.Devices.Gpio;
 
 namespace AirHockeyHelper
-{
+{/*
     // This class needs to be implemented by the user
     public class StepperLib
     {
@@ -122,5 +122,5 @@ namespace AirHockeyHelper
         {
 
         }
-    }
+    }*/
 }
