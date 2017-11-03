@@ -1,0 +1,2 @@
+C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\AirHockeyApp.csproj;x86
+C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyHelper\AirHockeyHelper.csproj;x86
