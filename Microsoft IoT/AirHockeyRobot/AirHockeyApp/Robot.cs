@@ -54,7 +54,7 @@ namespace AirHockeyApp
         public event EventHandler<EventArgs> RobotGoalSensorTriggered;
         public event EventHandler<EventArgs> HumanGoalSensorTriggered;
 
-        public StepperLib StepperX, StepperY;
+      //  public StepperLib StepperX, StepperY;
 
         public AIHelper AI;
 
@@ -78,29 +78,29 @@ namespace AirHockeyApp
         {
             stop = false;
 
-            long moveSpeed = (long)Config.DEFAULT_MOVE_SPEED;
-            StepperX.Speed = moveSpeed;
-            StepperY.Speed = moveSpeed;
+          //  long moveSpeed = (long)Config.DEFAULT_MOVE_SPEED;
+          //  StepperX.Speed = moveSpeed;
+          //  StepperY.Speed = moveSpeed;
 
             while (LimitSwitchPin_X1.Read() == GpioPinValue.High || LimitSwitchPin_Y1.Read() == GpioPinValue.High)
             {
                 if (LimitSwitchPin_X1.Read() == GpioPinValue.High)
                 {
-                    StepperX.Move(-10);
-                    StepperX.RunSpeed();
+                   // StepperX.Move(-10);
+                   // StepperX.RunSpeed();
                 }
 
                 if (LimitSwitchPin_Y1.Read() == GpioPinValue.High)
                 {
-                    StepperY.Move(-10);
-                    StepperY.RunSpeed();
+                   // StepperY.Move(-10);
+                   // StepperY.RunSpeed();
                 }
 
                 if (stop) return;
             }
 
-            StepperX.SetCurrentPosition(0);
-            StepperY.SetCurrentPosition(0);
+          //  StepperX.SetCurrentPosition(0);
+          //  StepperY.SetCurrentPosition(0);
 
             //LimitSwitchPin_X1.ValueChanged += LimitSwitchPin_X1_ValueChanged;
             //LimitSwitchPin_X2.ValueChanged += LimitSwitchPin_X2_ValueChanged;
@@ -143,26 +143,26 @@ namespace AirHockeyApp
 
         public void RunToPosition()
         {
-            while (StepperX.Run() || StepperY.Run()) ;
+          //  while (StepperX.Run() || StepperY.Run()) ;
         }
 
-        public Point GetOffsets()
-        {
-            return new Point(StepperX.CurrentPosition, StepperY.CurrentPosition);
-        }
+      //  public Point GetOffsets()
+      //  {
+          //  return new Point(StepperX.CurrentPosition, StepperY.CurrentPosition);
+      //  }
 
         public void ResetMotorParameters()
         {
-            StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
+           /* StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
             StepperY.MaxSpeed = Config.MOTOR_Y_MAX_SPEED;
             StepperX.Acceleration = Config.MOTOR_X_ACCELERATION;
-            StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
+            StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;*/
         }
 
         public void MoveToOffset(Point offset)
         {
-            StepperX.MoveTo((long)offset.X);
-            StepperY.MoveTo((long)offset.Y);
+         /*   StepperX.MoveTo((long)offset.X);
+            StepperY.MoveTo((long)offset.Y);*/
         }
 
         public void MoveFastToOffset(Point offset)
@@ -175,60 +175,60 @@ namespace AirHockeyApp
         {
             ResetMotorParameters();
 
-            float diffX = (float)Math.Abs(StepperX.CurrentPosition - offset.X);
-            float diffY = (float)Math.Abs(StepperY.CurrentPosition - offset.Y);
+         //   float diffX = (float)Math.Abs(StepperX.CurrentPosition - offset.X);
+         //   float diffY = (float)Math.Abs(StepperY.CurrentPosition - offset.Y);
 
-            if (diffX > 0 && diffY > 0)
-            {
-                float newAccelY = Config.MOTOR_Y_ACCELERATION;
-                float newAccelX = Config.MOTOR_X_ACCELERATION;
+          //  if (diffX > 0 && diffY > 0)
+          //  {
+             //   float newAccelY = Config.MOTOR_Y_ACCELERATION;
+             //   float newAccelX = Config.MOTOR_X_ACCELERATION;
 
-                long minMaxSpeed = (long)Math.Min(Config.MOTOR_X_MAX_SPEED, Config.MOTOR_Y_MAX_SPEED);
-                StepperX.MaxSpeed = minMaxSpeed;
-                StepperY.MaxSpeed = minMaxSpeed;
+             //   long minMaxSpeed = (long)Math.Min(Config.MOTOR_X_MAX_SPEED, Config.MOTOR_Y_MAX_SPEED);
+             //   StepperX.MaxSpeed = minMaxSpeed;
+             //   StepperY.MaxSpeed = minMaxSpeed;
 
                 // We need to move more in the X direction than Y, so Y accel will be slower than X accel
-                if (diffX > diffY)
-                {
-                    if (Config.MOTOR_Y_ACCELERATION < Config.MOTOR_X_ACCELERATION)
-                    {
-                        newAccelY = diffY / diffX * Config.MOTOR_X_ACCELERATION;
-                        if (newAccelY > Config.MOTOR_Y_ACCELERATION)
-                        {
-                            newAccelX = Config.MOTOR_X_ACCELERATION * (Config.MOTOR_Y_ACCELERATION / newAccelY);
-                            newAccelY = Config.MOTOR_Y_ACCELERATION;
-                        }
-                    }
-                    else
-                    {
-                        newAccelY = diffY / diffX * Config.MOTOR_X_ACCELERATION;
-                        newAccelX = Config.MOTOR_X_ACCELERATION;
-                    }
-                }
+             //   if (diffX > diffY)
+             //   {
+             //     if (Config.MOTOR_Y_ACCELERATION < Config.MOTOR_X_ACCELERATION)
+             //       {
+             //           newAccelY = diffY / diffX * Config.MOTOR_X_ACCELERATION;
+             //           if (newAccelY > Config.MOTOR_Y_ACCELERATION)
+             //           {
+             //               newAccelX = Config.MOTOR_X_ACCELERATION * (Config.MOTOR_Y_ACCELERATION / newAccelY);
+             //               newAccelY = Config.MOTOR_Y_ACCELERATION;
+             //           }
+             //       }
+             //       else
+             //       {
+             //           newAccelY = diffY / diffX * Config.MOTOR_X_ACCELERATION;
+             //           newAccelX = Config.MOTOR_X_ACCELERATION;
+             //       }
+             //   }
                 // We need to move more in the Y direction, so X accel will be slower than Y accel
-                else
-                {
-                    if (Config.MOTOR_Y_ACCELERATION < Config.MOTOR_X_ACCELERATION)
-                    {
-                        newAccelX = diffX / diffY * Config.MOTOR_Y_ACCELERATION;
-                        newAccelY = Config.MOTOR_Y_ACCELERATION;
-                    }
-                    else
-                    {
-                        newAccelX = diffX / diffY * Config.MOTOR_Y_ACCELERATION;
-                        if (newAccelX > Config.MOTOR_X_ACCELERATION)
-                        {
-                            newAccelY = Config.MOTOR_Y_ACCELERATION * (Config.MOTOR_X_ACCELERATION / newAccelX);
-                            newAccelX = Config.MOTOR_X_ACCELERATION;
-                        }
-                    }
-                }
+             //   else
+             //   {
+             //       if (Config.MOTOR_Y_ACCELERATION < Config.MOTOR_X_ACCELERATION)
+             //       {
+             //           newAccelX = diffX / diffY * Config.MOTOR_Y_ACCELERATION;
+             //           newAccelY = Config.MOTOR_Y_ACCELERATION;
+             //       }
+             //       else
+             //       {
+             //           newAccelX = diffX / diffY * Config.MOTOR_Y_ACCELERATION;
+             //           if (newAccelX > Config.MOTOR_X_ACCELERATION)
+             //           {
+             //               newAccelY = Config.MOTOR_Y_ACCELERATION * (Config.MOTOR_X_ACCELERATION / newAccelX);
+             //               newAccelX = Config.MOTOR_X_ACCELERATION;
+             //           }
+             //       }
+             //   }
 
-                StepperX.Acceleration = newAccelX;
-                StepperY.Acceleration = newAccelY;
-            }
+              //  StepperX.Acceleration = newAccelX;
+              //  StepperY.Acceleration = newAccelY;
+          //  }
 
-            MoveToOffset(offset);
+         //   MoveToOffset(offset);
         }
     }
 }

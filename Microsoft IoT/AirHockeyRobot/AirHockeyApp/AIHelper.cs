@@ -148,7 +148,7 @@ namespace AirHockeyApp
             }
 
             // Set the default defense position
-            defenseOffset = new Point(Config.MAX_MALLET_OFFSET_X / 2, 0);
+          //  defenseOffset = new Point(Config.MAX_MALLET_OFFSET_X / 2, 0);
 
             // Calculate center of mass for trajectory calculations
             // Get the previous center of mass position
@@ -303,8 +303,8 @@ namespace AirHockeyApp
             previousTrajectoryPoint = trajectoryPoint;
             previousBouncePoints = bouncePoints;
 
-            return malletTargetOffset;
-        }*/
+            return malletTargetOffset;*/
+        }
 
         // Handles calculation of center of mass of group of points
         public class CenterOfMass

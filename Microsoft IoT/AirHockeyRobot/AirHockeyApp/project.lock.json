@@ -15540,19 +15540,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\lxswf_000\\.nuget\\packages\\": {}
+    "C:\\Users\\VTAirHockeyRobot\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\AirHockeyApp.csproj",
+      "projectUniqueName": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\AirHockeyApp.csproj",
       "projectName": "AirHockeyApp",
-      "projectPath": "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\AirHockeyApp.csproj",
-      "projectJsonPath": "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\project.json",
-      "packagesPath": "C:\\Users\\lxswf_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\obj\\",
+      "projectPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\AirHockeyApp.csproj",
+      "projectJsonPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\project.json",
+      "packagesPath": "C:\\Users\\VTAirHockeyRobot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyApp\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\lxswf_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VTAirHockeyRobot\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -15562,8 +15562,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj": {
-              "projectPath": "C:\\Users\\lxswf_000\\Desktop\\VTRobotAirHockey-Dev\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj"
+            "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj": {
+              "projectPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj"
             }
           }
         }
