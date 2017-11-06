@@ -135,7 +135,7 @@ namespace AirHockeyApp
         /// <param name="currentPuckPosition">Point representing puck's current position</param>
         /// <param name="currentTime">Elapsed milliseconds since start of puck tracking</param>
         /// <returns>Point representing where the mallet should move to</returns>
-        public Point calculateMalletTarget(Point currentPuckPosition, long currentTime)
+       /* public Point calculateMalletTarget(Point currentPuckPosition, long currentTime)
         {
             puckPosition = currentPuckPosition;
 
@@ -167,7 +167,7 @@ namespace AirHockeyApp
             // For speed calculations
             var prevPosition = positionHistory[positionHistory.Count - 2];
             var currPosition = positionHistory.Last();
-/*
+
             // Convert everything to positions (coordinates in the coordinate plane) or offsets (steps for motors)
             Point malletTargetOffset = CoordinateHelper.INVALID_POINT;
             // Mallet offset
@@ -303,8 +303,8 @@ namespace AirHockeyApp
             previousTrajectoryPoint = trajectoryPoint;
             previousBouncePoints = bouncePoints;
 
-            return malletTargetOffset;*/
-        }
+            return malletTargetOffset;
+        } */
 
         // Handles calculation of center of mass of group of points
         public class CenterOfMass

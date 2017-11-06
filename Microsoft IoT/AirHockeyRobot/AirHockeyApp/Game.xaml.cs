@@ -101,7 +101,7 @@ namespace AirHockeyApp
             robotRangeLine.StrokeThickness = 3;
             robotRangeLine.Y1 = 0;
             robotRangeLine.Y2 = virtualHeight;
-            robotRangeLine.X1 = robotRangeLine.X2 = Config.TABLE_MID_X_COORDINATE;
+          //  robotRangeLine.X1 = robotRangeLine.X2 = Config.TABLE_MID_X_COORDINATE;
             mainCanvas.Children.Add(robotRangeLine);
 
             Rectangle rect = new Rectangle();
@@ -288,7 +288,7 @@ namespace AirHockeyApp
         private void MainCanvas_PointerMoved(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
         {
             var puckPosition = e.GetCurrentPoint(mainCanvas).Position;
-            runDecisionThread(puckPosition);
+            //runDecisionThread(puckPosition);
         }
 
         // Testing without an airhockey table
@@ -311,7 +311,7 @@ namespace AirHockeyApp
                 }
             }, WorkItemPriority.High);
 
-            runUIThread();
+            ///runUIThread();
         }
 
         #endregion
@@ -364,7 +364,7 @@ namespace AirHockeyApp
             // Run thread to update UI      
             if (gameMode == GameMode.Diagnostics)
             {
-                runUIThread();
+              //  runUIThread();
             }
 
             // Run thread to read camera and make decisions
