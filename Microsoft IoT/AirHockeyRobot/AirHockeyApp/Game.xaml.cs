@@ -31,7 +31,7 @@ namespace AirHockeyApp
         GameMode gameMode = GameMode.Diagnostics;
 
         //PixyCam pixyCam;
-        Robot robot;
+       // Robot robot;
 
         Line trajectoryLine;
         List<Line> lineList;
@@ -53,7 +53,7 @@ namespace AirHockeyApp
           //  CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
 
             //pixyCam = new PixyCam();
-            robot = new Robot();
+           // robot = new Robot();
 
             // Initialize robot's max speed and acceleration
          //   robot.StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
@@ -63,8 +63,8 @@ namespace AirHockeyApp
          //   robot.StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
 
             // Adds event listeners for when a goal is scored
-            robot.HumanGoalSensorTriggered += Robot_HumanGoalSensorTriggered;
-            robot.RobotGoalSensorTriggered += Robot_RobotGoalSensorTriggered;
+           // robot.HumanGoalSensorTriggered += Robot_HumanGoalSensorTriggered;
+           // robot.RobotGoalSensorTriggered += Robot_RobotGoalSensorTriggered;
 
             initializeUI();
         }
@@ -190,10 +190,10 @@ namespace AirHockeyApp
         {
             stopThread = true;
 
-            if (robot != null)
-            {
-                robot.Close();
-            }
+          //  if (robot != null)
+          //  {
+          //      robot.Close();
+          //  }
 
             //if (pixyCam != null)
             //{

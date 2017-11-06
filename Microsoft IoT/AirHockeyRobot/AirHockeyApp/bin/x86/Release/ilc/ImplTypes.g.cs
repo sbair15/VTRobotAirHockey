@@ -699,7 +699,7 @@ namespace System
 					__value__retval = (global::Windows.System.Threading.TimerElapsedHandler)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToDelegate(
 										((global::System.IntPtr)unsafe___value__retval), 
 										typeof(global::Windows.System.Threading.TimerElapsedHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget119>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget117>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Invoke)
 									);
 					// Return
 					return __value__retval;
@@ -756,7 +756,7 @@ namespace System
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget121>(global::System.EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation__EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget119>(global::System.EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -2315,97 +2315,6 @@ namespace System.Collections.Generic
 
 		// v-table for 'System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string,Windows.ApplicationModel.Resources.Core.NamedResource>>'
 		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, global::Windows.ApplicationModel.Resources.Core.NamedResource>>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_First = 6;
-		}
-	}
-
-	// System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.DeviceInformation>
-	public unsafe static class IReadOnlyList_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-								);
-			}
-
-			int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>.Count
-			{
-				get
-				{
-					return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-									);
-				}
-			}
-
-			global::Windows.Devices.Enumeration.DeviceInformation global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>.this[int index]
-			{
-				get
-				{
-					return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Devices.Enumeration.DeviceInformation>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-											this, 
-											typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-										))[index];
-				}
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetAt = 6;
-			internal const int idx_get_Size = 7;
-			internal const int idx_IndexOf = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
-
-	// System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.DeviceInformation>
-	public unsafe static class IEnumerable_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-								);
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>))]
 		public unsafe partial struct Vtbl
 		{
 			internal const int idx_First = 6;
@@ -4398,188 +4307,6 @@ namespace System.Collections.Generic
 			internal const int idx_get_Value = 7;
 		}
 	}
-
-	// System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation>
-	public unsafe static class IEnumerable_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-								);
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_First = 6;
-		}
-	}
-
-	// System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation2>
-	public unsafe static class IEnumerable_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation2> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation2>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-								);
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IEnumerable<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_First = 6;
-		}
-	}
-
-	// System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation>
-	public unsafe static class IReadOnlyList_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.IDeviceInformation>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-								);
-			}
-
-			int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.IDeviceInformation>.Count
-			{
-				get
-				{
-					return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-									);
-				}
-			}
-
-			global::Windows.Devices.Enumeration.IDeviceInformation global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>.this[int index]
-			{
-				get
-				{
-					return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Devices.Enumeration.IDeviceInformation>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-											this, 
-											typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle
-										))[index];
-				}
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetAt = 6;
-			internal const int idx_get_Size = 7;
-			internal const int idx_IndexOf = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
-
-	// System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation2>
-	public unsafe static class IReadOnlyList_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl
-	{
-		// DispatchClass for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.IDeviceInformation2>
-		{
-			global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation2> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>.GetEnumerator()
-			{
-				global::System.RuntimeTypeHandle dummySharedDynamicAdapter = typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle;
-				return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.IDeviceInformation2>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-								);
-			}
-
-			global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-			{
-				return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-									this, 
-									typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-								);
-			}
-
-			int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.IDeviceInformation2>.Count
-			{
-				get
-				{
-					return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-									);
-				}
-			}
-
-			global::Windows.Devices.Enumeration.IDeviceInformation2 global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>.this[int index]
-			{
-				get
-				{
-					return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Devices.Enumeration.IDeviceInformation2>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-											this, 
-											typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle
-										))[index];
-				}
-			}
-		}
-
-		// v-table for 'System.Collections.Generic.IReadOnlyList<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetAt = 6;
-			internal const int idx_get_Size = 7;
-			internal const int idx_IndexOf = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
 }
 
 namespace System.Runtime.InteropServices
@@ -4888,12 +4615,12 @@ namespace System.Runtime.InteropServices
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnGetUnmarshalClass_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget148>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetUnmarshalClass__STUB),
-				pfnGetMarshalSizeMax_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget149>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetMarshalSizeMax__STUB),
-				pfnMarshalInterface_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget150>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.MarshalInterface__STUB),
-				pfnUnmarshalInterface_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget151>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.UnmarshalInterface__STUB),
+				pfnGetUnmarshalClass_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget144>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetUnmarshalClass__STUB),
+				pfnGetMarshalSizeMax_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget145>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.GetMarshalSizeMax__STUB),
+				pfnMarshalInterface_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget146>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.MarshalInterface__STUB),
+				pfnUnmarshalInterface_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget147>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.UnmarshalInterface__STUB),
 				pfnReleaseMarshalData_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget1>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.ReleaseMarshalData__STUB),
-				pfnDisconnectObject_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget126>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.DisconnectObject__STUB),
+				pfnDisconnectObject_System_Runtime_InteropServices__IMarshal__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget122>(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl.DisconnectObject__STUB),
 			}
 			#endif
 			;
@@ -6651,7 +6378,7 @@ namespace System.Runtime.InteropServices.WindowsRuntime
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnGetBuffer_System_Runtime_InteropServices_WindowsRuntime__IBufferByteAccess__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget147>(global::System.Runtime.InteropServices.WindowsRuntime.IBufferByteAccess__System_Runtime_WindowsRuntime__Impl.Vtbl.GetBuffer__STUB),
+				pfnGetBuffer_System_Runtime_InteropServices_WindowsRuntime__IBufferByteAccess__System_Runtime_WindowsRuntime = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget143>(global::System.Runtime.InteropServices.WindowsRuntime.IBufferByteAccess__System_Runtime_WindowsRuntime__Impl.Vtbl.GetBuffer__STUB),
 			}
 			#endif
 			;
@@ -7249,20 +6976,56 @@ namespace Windows.ApplicationModel.Resources.Core
 		// StubClass for 'Windows.ApplicationModel.Resources.Core.IResourceMap'
 		public static partial class StubClass
 		{
+			// Signature, Windows.ApplicationModel.Resources.Core.IResourceMap.GetValue, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.HSTRINGMarshaller] string__System.Runtime.InteropServices.HSTRING, [fwd] [in] [Mcg.CodeGen.WinRTClassMarshaller] Windows_ApplicationModel_Resources_Core_ResourceContext__Windows_ApplicationModel_Resources_Core__ResourceContext *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.WinRTClassMarshaller] Windows_ApplicationModel_Resources_Core_ResourceCandidate__Windows_ApplicationModel_Resources_Core__ResourceCandidate *, 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			public static global::Windows.ApplicationModel.Resources.Core.ResourceCandidate GetValue(
 						global::System.__ComObject __this, 
 						string resource, 
 						global::Windows.ApplicationModel.Resources.Core.ResourceContext context)
 			{
-				global::Windows.ApplicationModel.Resources.Core.ResourceCandidate __ret = global::McgInterop.ForwardComSharedStubs.Func_string__TArg0__TResult__<global::Windows.ApplicationModel.Resources.Core.IResourceMap, global::Windows.ApplicationModel.Resources.Core.ResourceContext, global::Windows.ApplicationModel.Resources.Core.ResourceCandidate>(
-									__this, 
-									resource, 
-									context, 
-									global::Windows.ApplicationModel.Resources.Core.IResourceMap__Impl.Vtbl.idx_GetValueForContext
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
+				// Setup
+				global::System.Runtime.InteropServices.HSTRING unsafe_resource = default(global::System.Runtime.InteropServices.HSTRING);
+				global::Windows.ApplicationModel.Resources.Core.IResourceContext__Impl.Vtbl** unsafe_context = default(global::Windows.ApplicationModel.Resources.Core.IResourceContext__Impl.Vtbl**);
+				global::Windows.ApplicationModel.Resources.Core.IResourceCandidate__Impl.Vtbl** unsafe_value__retval = default(global::Windows.ApplicationModel.Resources.Core.IResourceCandidate__Impl.Vtbl**);
+				global::Windows.ApplicationModel.Resources.Core.ResourceCandidate value__retval = default(global::Windows.ApplicationModel.Resources.Core.ResourceCandidate);
+				int unsafe___return__;
+				try
+				{
+					// Marshalling
+					fixed (char* pBuffer_resource = resource)
+					{
+						global::System.Runtime.InteropServices.HSTRING_HEADER hstring_header_resource;
+						global::System.Runtime.InteropServices.McgMarshal.StringToHStringReference(pBuffer_resource, resource, &(hstring_header_resource), &(unsafe_resource));
+						unsafe_context = (global::Windows.ApplicationModel.Resources.Core.IResourceContext__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.ObjectToComInterface(
+											context, 
+											typeof(global::Windows.ApplicationModel.Resources.Core.ResourceContext).TypeHandle
+										);
+						unsafe_value__retval = null;
+						// Call to native method
+						unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
+											__this, 
+											typeof(global::Windows.ApplicationModel.Resources.Core.IResourceMap).TypeHandle, 
+											global::Windows.ApplicationModel.Resources.Core.IResourceMap__Impl.Vtbl.idx_GetValueForContext, 
+											unsafe_resource, 
+											unsafe_context, 
+											&(unsafe_value__retval)
+										);
+						global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+						value__retval = (global::Windows.ApplicationModel.Resources.Core.ResourceCandidate)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToObject(
+											((global::System.IntPtr)unsafe_value__retval), 
+											typeof(global::Windows.ApplicationModel.Resources.Core.ResourceCandidate).TypeHandle
+										);
+					}
+					// Return
+					return value__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_context)));
+					global::System.GC.KeepAlive(context);
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_value__retval)));
+				}
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -7673,742 +7436,26 @@ namespace Windows.Devices
 	}
 }
 
-namespace Windows.Devices.Enumeration
-{
-	// Windows.Devices.Enumeration.IDeviceInformationStatics
-	public unsafe static class IDeviceInformationStatics__Impl
-	{
-		// StubClass for 'Windows.Devices.Enumeration.IDeviceInformationStatics'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> FindAllAsync(
-						global::System.__ComObject __this, 
-						string aqsFilter)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __ret = global::McgInterop.ForwardComSharedStubs.Func_string__TResult__<global::Windows.Devices.Enumeration.IDeviceInformationStatics, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>>(
-									__this, 
-									aqsFilter, 
-									global::Windows.Devices.Enumeration.IDeviceInformationStatics__Impl.Vtbl.idx_FindAllAsyncAqsFilter
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Enumeration.IDeviceInformationStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformationStatics))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Enumeration.IDeviceInformationStatics
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> global::Windows.Devices.Enumeration.IDeviceInformationStatics.FindAllAsync(string aqsFilter)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __retVal = global::Windows.Devices.Enumeration.IDeviceInformationStatics__Impl.StubClass.FindAllAsync(
-									this, 
-									aqsFilter
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Enumeration.IDeviceInformationStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformationStatics))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_FindAllAsyncAqsFilter = 10;
-		}
-	}
-
-	// Windows.Devices.Enumeration.IDeviceInformation
-	public unsafe static class IDeviceInformation__Impl
-	{
-		// StubClass for 'Windows.Devices.Enumeration.IDeviceInformation'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static string get_Id(global::System.__ComObject __this)
-			{
-				string __ret = global::McgInterop.ForwardComSharedStubs.Func_string__<global::Windows.Devices.Enumeration.IDeviceInformation>(
-									__this, 
-									global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl.idx_get_Id
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Enumeration.IDeviceInformation'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformation))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Enumeration.IDeviceInformation
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Devices.Enumeration.IDeviceInformation.Id")]
-			string global::Windows.Devices.Enumeration.IDeviceInformation.get_Id()
-			{
-				string __retVal = global::Windows.Devices.Enumeration.IDeviceInformation__Impl.StubClass.get_Id(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Enumeration.IDeviceInformation'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformation))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_Id = 6;
-		}
-	}
-
-	// Windows.Devices.Enumeration.IDeviceInformation2
-	public unsafe static class IDeviceInformation2__Impl
-	{
-		// v-table for 'Windows.Devices.Enumeration.IDeviceInformation2'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformation2))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-}
-
 namespace Windows.Devices.Gpio
 {
-	// Windows.Devices.Gpio.IGpioPin
-	public unsafe static class IGpioPin__Impl
-	{
-		// StubClass for 'Windows.Devices.Gpio.IGpioPin'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Devices.Gpio.IGpioPin.add_ValueChanged, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.WinRTDelegateMarshaller] Windows_Foundation_TypedEventHandler_2_Windows_Devices_Gpio_GpioPin__Windows_Devices_Gpio_GpioPinValueChangedEventArgs___Windows_Foundation__TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V_ *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] System_Runtime_InteropServices_WindowsRuntime_EventRegistrationToken__Windows_Foundation__EventRegistrationToken, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ValueChanged(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs> handler)
-			{
-				// Setup
-				global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl** unsafe_handler = default(global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl**);
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken unsafe_token__retval;
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token__retval;
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					unsafe_handler = (global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
-										handler, 
-										typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget113>(global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Invoke)
-									);
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Devices.Gpio.IGpioPin).TypeHandle, 
-										global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl.idx_add_ValueChanged, 
-										unsafe_handler, 
-										&(unsafe_token__retval)
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					token__retval = unsafe_token__retval;
-					// Return
-					return token__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_handler)));
-				}
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void remove_ValueChanged(
-						global::System.__ComObject __this, 
-						global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc__WindowsRuntime_EventRegistrationToken__<global::Windows.Devices.Gpio.IGpioPin>(
-									__this, 
-									token, 
-									global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl.idx_remove_ValueChanged
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void SetDriveMode(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Gpio.GpioPinDriveMode value)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc_int<global::Windows.Devices.Gpio.IGpioPin>(
-									__this, 
-									((int)value), 
-									global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl.idx_SetDriveMode
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void Write(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Gpio.GpioPinValue value)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc_int<global::Windows.Devices.Gpio.IGpioPin>(
-									__this, 
-									((int)value), 
-									global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl.idx_Write
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			// Signature, Windows.Devices.Gpio.IGpioPin.Read, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.EnumMarshaller] Windows_Devices_Gpio_GpioPinValue__Windows_Devices_Gpio__GpioPinValue, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Gpio.GpioPinValue Read(global::System.__ComObject __this)
-			{
-				// Setup
-				global::Windows.Devices.Gpio.GpioPinValue unsafe_value__retval;
-				global::Windows.Devices.Gpio.GpioPinValue value__retval;
-				int unsafe___return__;
-				// Marshalling
-				// Call to native method
-				unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-									__this, 
-									typeof(global::Windows.Devices.Gpio.IGpioPin).TypeHandle, 
-									global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl.idx_Read, 
-									&(unsafe_value__retval)
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				value__retval = unsafe_value__retval;
-				// Return
-				return value__retval;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Gpio.IGpioPin'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPin))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioPin
-		{
-			public virtual void Dispose()
-			{
-				global::System.IDisposable__Impl.StubClass.Close(this);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Windows.Devices.Gpio.IGpioPin.ValueChanged")]
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken global::Windows.Devices.Gpio.IGpioPin.add_ValueChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs> handler)
-			{
-				global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.add_ValueChanged(
-									this, 
-									handler
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Windows.Devices.Gpio.IGpioPin.ValueChanged")]
-			void global::Windows.Devices.Gpio.IGpioPin.remove_ValueChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-			{
-				global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.remove_ValueChanged(
-									this, 
-									token
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Devices.Gpio.IGpioPin.SetDriveMode(global::Windows.Devices.Gpio.GpioPinDriveMode value)
-			{
-				global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.SetDriveMode(
-									this, 
-									value
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Devices.Gpio.IGpioPin.Write(global::Windows.Devices.Gpio.GpioPinValue value)
-			{
-				global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.Write(
-									this, 
-									value
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Devices.Gpio.GpioPinValue global::Windows.Devices.Gpio.IGpioPin.Read()
-			{
-				global::Windows.Devices.Gpio.GpioPinValue __retVal = global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.Read(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Gpio.IGpioPin'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPin))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_add_ValueChanged = 6;
-			internal const int idx_remove_ValueChanged = 7;
-			internal const int idx_SetDriveMode = 14;
-			internal const int idx_Write = 15;
-			internal const int idx_Read = 16;
-		}
-	}
-
-	// Windows.Devices.Gpio.IGpioPinValueChangedEventArgs
-	public unsafe static class IGpioPinValueChangedEventArgs__Impl
-	{
-		// StubClass for 'Windows.Devices.Gpio.IGpioPinValueChangedEventArgs'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Devices.Gpio.IGpioPinValueChangedEventArgs.get_Edge, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.EnumMarshaller] Windows_Devices_Gpio_GpioPinEdge__Windows_Devices_Gpio__GpioPinEdge, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Gpio.GpioPinEdge get_Edge(global::System.__ComObject __this)
-			{
-				// Setup
-				global::Windows.Devices.Gpio.GpioPinEdge unsafe_value__retval;
-				global::Windows.Devices.Gpio.GpioPinEdge value__retval;
-				int unsafe___return__;
-				// Marshalling
-				// Call to native method
-				unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-									__this, 
-									typeof(global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs).TypeHandle, 
-									global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs__Impl.Vtbl.idx_get_Edge, 
-									&(unsafe_value__retval)
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				value__retval = unsafe_value__retval;
-				// Return
-				return value__retval;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Gpio.IGpioPinValueChangedEventArgs'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Devices.Gpio.IGpioPinValueChangedEventArgs.Edge")]
-			global::Windows.Devices.Gpio.GpioPinEdge global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs.get_Edge()
-			{
-				global::Windows.Devices.Gpio.GpioPinEdge __retVal = global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs__Impl.StubClass.get_Edge(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Gpio.IGpioPinValueChangedEventArgs'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_Edge = 6;
-		}
-	}
-
-	// Windows.Devices.Gpio.IGpioControllerStatics
-	public unsafe static class IGpioControllerStatics__Impl
-	{
-		// StubClass for 'Windows.Devices.Gpio.IGpioControllerStatics'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Gpio.GpioController GetDefault(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Gpio.GpioController __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Devices.Gpio.IGpioControllerStatics, global::Windows.Devices.Gpio.GpioController>(
-									__this, 
-									global::Windows.Devices.Gpio.IGpioControllerStatics__Impl.Vtbl.idx_GetDefault
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Gpio.IGpioControllerStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioControllerStatics))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioControllerStatics
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Devices.Gpio.GpioController global::Windows.Devices.Gpio.IGpioControllerStatics.GetDefault()
-			{
-				global::Windows.Devices.Gpio.GpioController __retVal = global::Windows.Devices.Gpio.IGpioControllerStatics__Impl.StubClass.GetDefault(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Gpio.IGpioControllerStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioControllerStatics))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetDefault = 6;
-		}
-	}
-
 	// Windows.Devices.Gpio.IGpioController
 	public unsafe static class IGpioController__Impl
 	{
-		// StubClass for 'Windows.Devices.Gpio.IGpioController'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Devices.Gpio.IGpioController.OpenPin, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.BlittableValueMarshaller] int__int, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.WinRTClassMarshaller] Windows_Devices_Gpio_GpioPin__Windows_Devices_Gpio__GpioPin *, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Gpio.GpioPin OpenPin(
-						global::System.__ComObject __this, 
-						int pinNumber)
-			{
-				// Setup
-				global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl** unsafe_pin__retval = default(global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl**);
-				global::Windows.Devices.Gpio.GpioPin pin__retval = default(global::Windows.Devices.Gpio.GpioPin);
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					unsafe_pin__retval = null;
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Devices.Gpio.IGpioController).TypeHandle, 
-										global::Windows.Devices.Gpio.IGpioController__Impl.Vtbl.idx_OpenPin, 
-										pinNumber, 
-										&(unsafe_pin__retval)
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					pin__retval = (global::Windows.Devices.Gpio.GpioPin)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToObject(
-										((global::System.IntPtr)unsafe_pin__retval), 
-										typeof(global::Windows.Devices.Gpio.GpioPin).TypeHandle
-									);
-					// Return
-					return pin__retval;
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_pin__retval)));
-				}
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Gpio.IGpioController'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioController))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioController
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Devices.Gpio.GpioPin global::Windows.Devices.Gpio.IGpioController.OpenPin(int pinNumber)
-			{
-				global::Windows.Devices.Gpio.GpioPin __retVal = global::Windows.Devices.Gpio.IGpioController__Impl.StubClass.OpenPin(
-									this, 
-									pinNumber
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
 		// v-table for 'Windows.Devices.Gpio.IGpioController'
 		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioController))]
 		public unsafe partial struct Vtbl
 		{
-			internal const int idx_OpenPin = 7;
-		}
-	}
-}
-
-namespace Windows.Devices.Spi
-{
-	// Windows.Devices.Spi.ISpiConnectionSettingsFactory
-	public unsafe static class ISpiConnectionSettingsFactory__Impl
-	{
-		// StubClass for 'Windows.Devices.Spi.ISpiConnectionSettingsFactory'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Devices.Spi.ISpiConnectionSettingsFactory.Create, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.BlittableValueMarshaller] int__int, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] System_IntPtr____w64 int, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::System.IntPtr Create(
-						global::System.__ComObject __this, 
-						int chipSelectLine)
-			{
-				// Setup
-				global::System.IntPtr unsafe_value__retval;
-				global::System.IntPtr value__retval;
-				int unsafe___return__;
-				// Marshalling
-				// Call to native method
-				unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-									__this, 
-									typeof(global::Windows.Devices.Spi.ISpiConnectionSettingsFactory).TypeHandle, 
-									global::Windows.Devices.Spi.ISpiConnectionSettingsFactory__Impl.Vtbl.idx_Create, 
-									chipSelectLine, 
-									&(unsafe_value__retval)
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				value__retval = unsafe_value__retval;
-				// Return
-				return value__retval;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Spi.ISpiConnectionSettingsFactory'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiConnectionSettingsFactory))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Spi.ISpiConnectionSettingsFactory
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::System.IntPtr global::Windows.Devices.Spi.ISpiConnectionSettingsFactory.Create(int chipSelectLine)
-			{
-				global::System.IntPtr __retVal = global::Windows.Devices.Spi.ISpiConnectionSettingsFactory__Impl.StubClass.Create(
-									this, 
-									chipSelectLine
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Spi.ISpiConnectionSettingsFactory'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiConnectionSettingsFactory))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_Create = 6;
 		}
 	}
 
-	// Windows.Devices.Spi.ISpiConnectionSettings
-	public unsafe static class ISpiConnectionSettings__Impl
+	// Windows.Devices.Gpio.IGpioPin
+	public unsafe static class IGpioPin__Impl
 	{
-		// StubClass for 'Windows.Devices.Spi.ISpiConnectionSettings'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void put_DataBitLength(
-						global::System.__ComObject __this, 
-						int value)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc_int__<global::Windows.Devices.Spi.ISpiConnectionSettings>(
-									__this, 
-									value, 
-									global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.Vtbl.idx_put_DataBitLength
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void put_ClockFrequency(
-						global::System.__ComObject __this, 
-						int value)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc_int__<global::Windows.Devices.Spi.ISpiConnectionSettings>(
-									__this, 
-									value, 
-									global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.Vtbl.idx_put_ClockFrequency
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void put_SharingMode(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Spi.SpiSharingMode value)
-			{
-				global::McgInterop.ForwardComSharedStubs.Proc_int<global::Windows.Devices.Spi.ISpiConnectionSettings>(
-									__this, 
-									((int)value), 
-									global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.Vtbl.idx_put_SharingMode
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Spi.ISpiConnectionSettings'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiConnectionSettings))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Spi.ISpiConnectionSettings
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Devices.Spi.ISpiConnectionSettings.DataBitLength")]
-			void global::Windows.Devices.Spi.ISpiConnectionSettings.put_DataBitLength(int value)
-			{
-				global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_DataBitLength(
-									this, 
-									value
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Devices.Spi.ISpiConnectionSettings.ClockFrequency")]
-			void global::Windows.Devices.Spi.ISpiConnectionSettings.put_ClockFrequency(int value)
-			{
-				global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_ClockFrequency(
-									this, 
-									value
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Devices.Spi.ISpiConnectionSettings.SharingMode")]
-			void global::Windows.Devices.Spi.ISpiConnectionSettings.put_SharingMode(global::Windows.Devices.Spi.SpiSharingMode value)
-			{
-				global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_SharingMode(
-									this, 
-									value
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-		}
-
-		// v-table for 'Windows.Devices.Spi.ISpiConnectionSettings'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiConnectionSettings))]
+		// v-table for 'Windows.Devices.Gpio.IGpioPin'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPin))]
 		public unsafe partial struct Vtbl
 		{
-			internal const int idx_put_DataBitLength = 11;
-			internal const int idx_put_ClockFrequency = 13;
-			internal const int idx_put_SharingMode = 15;
-		}
-	}
-
-	// Windows.Devices.Spi.ISpiDeviceStatics
-	public unsafe static class ISpiDeviceStatics__Impl
-	{
-		// StubClass for 'Windows.Devices.Spi.ISpiDeviceStatics'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static string GetDeviceSelector(global::System.__ComObject __this)
-			{
-				string __ret = global::McgInterop.ForwardComSharedStubs.Func_string__<global::Windows.Devices.Spi.ISpiDeviceStatics>(
-									__this, 
-									global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.Vtbl.idx_GetDeviceSelector
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> FromIdAsync(
-						global::System.__ComObject __this, 
-						string busId, 
-						global::Windows.Devices.Spi.SpiConnectionSettings settings)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> __ret = global::McgInterop.ForwardComSharedStubs.Func_string__TArg0__TResult__<global::Windows.Devices.Spi.ISpiDeviceStatics, global::Windows.Devices.Spi.SpiConnectionSettings, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>>(
-									__this, 
-									busId, 
-									settings, 
-									global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.Vtbl.idx_FromIdAsync
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Spi.ISpiDeviceStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiDeviceStatics))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Spi.ISpiDeviceStatics
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			string global::Windows.Devices.Spi.ISpiDeviceStatics.GetDeviceSelector()
-			{
-				string __retVal = global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.StubClass.GetDeviceSelector(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> global::Windows.Devices.Spi.ISpiDeviceStatics.FromIdAsync(
-						string busId, 
-						global::Windows.Devices.Spi.SpiConnectionSettings settings)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> __retVal = global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.StubClass.FromIdAsync(
-									this, 
-									busId, 
-									settings
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Devices.Spi.ISpiDeviceStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiDeviceStatics))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetDeviceSelector = 6;
-			internal const int idx_FromIdAsync = 9;
-		}
-	}
-
-	// Windows.Devices.Spi.ISpiDevice
-	public unsafe static class ISpiDevice__Impl
-	{
-		// StubClass for 'Windows.Devices.Spi.ISpiDevice'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Devices.Spi.ISpiDevice.TransferFullDuplex, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.BlittableArrayMarshaller] rg_byte__unsigned char *, [fwd] [out] [Mcg.CodeGen.BlittableArrayMarshaller] rg_byte__unsigned char *, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void TransferFullDuplex(
-						global::System.__ComObject __this, 
-						byte[] writeBuffer, 
-						byte[] readBuffer)
-			{
-				// Setup
-				uint unsafe_writeBuffer_mcgLength = 0;
-				byte* unsafe_writeBuffer;
-				uint unsafe_readBuffer_mcgLength = 0;
-				byte* unsafe_readBuffer;
-				int unsafe___return__;
-				// Marshalling
-				if (writeBuffer != null)
-					unsafe_writeBuffer_mcgLength = (uint)writeBuffer.Length;
-				fixed (byte* pinned_writeBuffer = global::McgInterop.McgCoreHelpers.GetArrayForCompat(writeBuffer))
-				{
-					unsafe_writeBuffer = (byte*)pinned_writeBuffer;
-					if (readBuffer != null)
-						unsafe_readBuffer_mcgLength = (uint)readBuffer.Length;
-					fixed (byte* pinned_readBuffer = global::McgInterop.McgCoreHelpers.GetArrayForCompat(readBuffer))
-					{
-						unsafe_readBuffer = (byte*)pinned_readBuffer;
-						// Call to native method
-						unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-											__this, 
-											typeof(global::Windows.Devices.Spi.ISpiDevice).TypeHandle, 
-											global::Windows.Devices.Spi.ISpiDevice__Impl.Vtbl.idx_TransferFullDuplex, 
-											unsafe_writeBuffer_mcgLength, 
-											unsafe_writeBuffer, 
-											unsafe_readBuffer_mcgLength, 
-											unsafe_readBuffer
-										);
-						global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					}
-				}
-				// Return
-			}
-		}
-
-		// DispatchClass for 'Windows.Devices.Spi.ISpiDevice'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiDevice))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Devices.Spi.ISpiDevice
-		{
-			public virtual void Dispose()
-			{
-				global::System.IDisposable__Impl.StubClass.Close(this);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Devices.Spi.ISpiDevice.TransferFullDuplex(
-						byte[] writeBuffer, 
-						byte[] readBuffer)
-			{
-				global::Windows.Devices.Spi.ISpiDevice__Impl.StubClass.TransferFullDuplex(
-									this, 
-									writeBuffer, 
-									readBuffer
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-		}
-
-		// v-table for 'Windows.Devices.Spi.ISpiDevice'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiDevice))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_TransferFullDuplex = 11;
+			internal const int idx_Read = 16;
 		}
 	}
 }
@@ -9612,82 +8659,6 @@ namespace Windows.Foundation
 		}
 	}
 
-	// Windows.Foundation.TypedEventHandler<Windows.Devices.Gpio.GpioPin,Windows.Devices.Gpio.GpioPinValueChangedEventArgs>
-	public unsafe static class TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.Devices.Gpio.GpioPin sender, 
-					global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs args)
-		{
-			global::McgInterop.ForwardComSharedStubs.Proc_TArg0__TArg1__<global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>, global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>(
-								__this, 
-								sender, 
-								args, 
-								global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl.idx_Invoke
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		// v-table for 'Windows.Foundation.TypedEventHandler<Windows.Devices.Gpio.GpioPin,Windows.Devices.Gpio.GpioPinValueChangedEventArgs>'
-		[global::System.Runtime.InteropServices.McgRootsType(typeof(global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>))]
-		public unsafe partial struct Vtbl
-		{
-			global::System.IntPtr pfnQueryInterface;
-			global::System.IntPtr pfnAddRef;
-			global::System.IntPtr pfnRelease;
-			// Windows_Foundation__TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V_
-			global::System.IntPtr pfnInvoke_Windows_Foundation__TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V_;
-			internal const int idx_Invoke = 3;
-			[global::System.Runtime.CompilerServices.InitDataBlob(typeof(global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl.Windows_Foundation_TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl_Vtbl_McgRvaContainer), "RVA_Windows_Foundation_TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChang" +
-				"edEventArgs_V___Impl_Vtbl_s_theCcwVtable")]
-			public static global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl s_theCcwVtable
-			#if false
-			 = new global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl() {
-				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
-				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
-				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget114>(global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl.Invoke__STUB),
-			}
-			#endif
-			;
-			public static global::System.IntPtr pNativeVtable;
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.NativeCallable]
-			static int Invoke__STUB(
-						global::System.IntPtr pComThis, 
-						global::Windows.Devices.Gpio.IGpioPin__Impl.Vtbl** unsafe_sender, 
-						global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs__Impl.Vtbl** unsafe_args)
-			{
-				object __this = global::System.Runtime.InteropServices.McgMarshal.ThisPointerToTargetObject(pComThis);
-				global::System.IntPtr __methodPtr = global::McgInterop.Intrinsics.VirtualAddrOf<global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>>(
-									__this, 
-									0
-								);
-				int __ret = ((int)global::McgInterop.ReverseComSharedStubs.Proc_TArg0__TArg1__<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs>(
-									__this, 
-									unsafe_sender, 
-									unsafe_args, 
-									__methodPtr
-								));
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			private static class Windows_Foundation_TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl_Vtbl_McgRvaContainer
-			{
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(0, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "QueryInterface")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(4, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "AddRef")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(8, typeof(global::System.Runtime.InteropServices.__vtable_IUnknown), "Release")]
-				[global::System.Runtime.CompilerServices.MethodAddrFixup(12, typeof(global::Windows.Foundation.TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl.Vtbl), "Invoke__STUB")]
-				[global::System.Runtime.CompilerServices.NonArray]
-				static readonly byte[] RVA_Windows_Foundation_TypedEventHandler_A_Windows_Devices_Gpio_GpioPin_j_Windows_Devices_Gpio_GpioPinValueChangedEventArgs_V___Impl_Vtbl_s_theCcwVtable = new byte[] {
-						0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			}
-		}
-	}
-
 	// Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.IStorageItem>
 	public unsafe static class AsyncOperationCompletedHandler_A_Windows_Storage_IStorageItem_V___Impl
 	{
@@ -9734,7 +8705,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_IStorageItem_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.IStorageItem>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget120>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_IStorageItem_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget118>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_IStorageItem_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -9849,328 +8820,6 @@ namespace Windows.Foundation
 		}
 	}
 
-	// Windows.Foundation.IAsyncOperation<Windows.Devices.Enumeration.DeviceInformationCollection>
-	public unsafe static class IAsyncOperation_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Enumeration.DeviceInformationCollection>'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.Devices.Enumeration.DeviceInformationCollection>.put_Completed, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.WinRTDelegateMarshaller] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Devices_Enumeration_DeviceInformationCollection___Windows_Foundation__AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V_ *, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void put_Completed(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection> handler)
-			{
-				// Setup
-				global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl** unsafe_handler = default(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl**);
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
-										handler, 
-										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget122>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Invoke)
-									);
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>).TypeHandle, 
-										global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl.idx_put_Completed, 
-										unsafe_handler
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					// Return
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_handler)));
-				}
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection> get_Completed(global::System.__ComObject __this)
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection>);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Enumeration.DeviceInformationCollection GetResults(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Enumeration.DeviceInformationCollection __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>, global::Windows.Devices.Enumeration.DeviceInformationCollection>(
-									__this, 
-									global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl.idx_GetResults
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Enumeration.DeviceInformationCollection>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Id")]
-			uint global::Windows.Foundation.IAsyncInfo.get_Id()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return 0;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Status")]
-			global::Windows.Foundation.AsyncStatus global::Windows.Foundation.IAsyncInfo.get_Status()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncStatus);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.ErrorCode")]
-			global::System.Exception global::Windows.Foundation.IAsyncInfo.get_ErrorCode()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::System.Exception);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Foundation.IAsyncInfo.Cancel()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Foundation.IAsyncInfo.Close()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Foundation.IAsyncOperation`1.Completed")]
-			void global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>.put_Completed(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection> handler)
-			{
-				global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.StubClass.put_Completed(
-									this, 
-									handler
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection> global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>.get_Completed()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection>);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Devices.Enumeration.DeviceInformationCollection global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>.GetResults()
-			{
-				global::Windows.Devices.Enumeration.DeviceInformationCollection __retVal = global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.StubClass.GetResults(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Enumeration.DeviceInformationCollection>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_put_Completed = 6;
-			internal const int idx_get_Completed = 7;
-			internal const int idx_GetResults = 8;
-		}
-	}
-
-	// Windows.Foundation.AsyncOperationCompletedHandler<Windows.Devices.Enumeration.DeviceInformationCollection>
-	public unsafe static class AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> asyncInfo, 
-					global::Windows.Foundation.AsyncStatus asyncStatus)
-		{
-			global::McgInterop.ForwardComSharedStubs.Proc_TArg0__int<global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Enumeration.DeviceInformationCollection>, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection>>(
-								__this, 
-								asyncInfo, 
-								((int)asyncStatus), 
-								global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Enumeration_DeviceInformationCollection_V___Impl.Vtbl.idx_Invoke
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		// v-table for 'Windows.Foundation.AsyncOperationCompletedHandler<Windows.Devices.Enumeration.DeviceInformationCollection>'
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_Invoke = 3;
-		}
-	}
-
-	// Windows.Foundation.IAsyncOperation<Windows.Devices.Spi.SpiDevice>
-	public unsafe static class IAsyncOperation_A_Windows_Devices_Spi_SpiDevice_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Spi.SpiDevice>'
-		public static partial class StubClass
-		{
-			// Signature, Windows.Foundation.IAsyncOperation<Windows.Devices.Spi.SpiDevice>.put_Completed, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.WinRTDelegateMarshaller] Windows_Foundation_AsyncOperationCompletedHandler_1_Windows_Devices_Spi_SpiDevice___Windows_Foundation__AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V_ *, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static void put_Completed(
-						global::System.__ComObject __this, 
-						global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice> handler)
-			{
-				// Setup
-				global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl** unsafe_handler = default(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl**);
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
-										handler, 
-										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget123>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl.Invoke)
-									);
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>).TypeHandle, 
-										global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl.idx_put_Completed, 
-										unsafe_handler
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					// Return
-				}
-				finally
-				{
-					// Cleanup
-					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_handler)));
-				}
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice> get_Completed(global::System.__ComObject __this)
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice>);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Spi.SpiDevice GetResults(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Spi.SpiDevice __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>, global::Windows.Devices.Spi.SpiDevice>(
-									__this, 
-									global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl.idx_GetResults
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Spi.SpiDevice>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Id")]
-			uint global::Windows.Foundation.IAsyncInfo.get_Id()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return 0;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.Status")]
-			global::Windows.Foundation.AsyncStatus global::Windows.Foundation.IAsyncInfo.get_Status()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncStatus);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.IAsyncInfo.ErrorCode")]
-			global::System.Exception global::Windows.Foundation.IAsyncInfo.get_ErrorCode()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::System.Exception);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Foundation.IAsyncInfo.Cancel()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			void global::Windows.Foundation.IAsyncInfo.Close()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.Foundation.IAsyncOperation`1.Completed")]
-			void global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>.put_Completed(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice> handler)
-			{
-				global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Spi_SpiDevice_V___Impl.StubClass.put_Completed(
-									this, 
-									handler
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice> global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>.get_Completed()
-			{
-				global::McgInterop.McgHelpers.FailFastForReducedMethod();
-				return default(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice>);
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Devices.Spi.SpiDevice global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>.GetResults()
-			{
-				global::Windows.Devices.Spi.SpiDevice __retVal = global::Windows.Foundation.IAsyncOperation_A_Windows_Devices_Spi_SpiDevice_V___Impl.StubClass.GetResults(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.IAsyncOperation<Windows.Devices.Spi.SpiDevice>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_put_Completed = 6;
-			internal const int idx_get_Completed = 7;
-			internal const int idx_GetResults = 8;
-		}
-	}
-
-	// Windows.Foundation.AsyncOperationCompletedHandler<Windows.Devices.Spi.SpiDevice>
-	public unsafe static class AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static void Invoke(
-					this global::System.__ComObject __this, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> asyncInfo, 
-					global::Windows.Foundation.AsyncStatus asyncStatus)
-		{
-			global::McgInterop.ForwardComSharedStubs.Proc_TArg0__int<global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Devices.Spi.SpiDevice>, global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice>>(
-								__this, 
-								asyncInfo, 
-								((int)asyncStatus), 
-								global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Devices_Spi_SpiDevice_V___Impl.Vtbl.idx_Invoke
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		// v-table for 'Windows.Foundation.AsyncOperationCompletedHandler<Windows.Devices.Spi.SpiDevice>'
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_Invoke = 3;
-		}
-	}
-
 	// Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IBuffer,uint>
 	public unsafe static class IAsyncOperationWithProgress_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl
 	{
@@ -10192,7 +8841,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget127>(global::Windows.Foundation.AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget123>(global::Windows.Foundation.AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -10237,7 +8886,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<global::Windows.Storage.Streams.IBuffer, uint>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget128>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget124>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -10410,7 +9059,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget129>(global::Windows.Foundation.AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation__AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget125>(global::Windows.Foundation.AsyncOperationProgressHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -10486,7 +9135,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget130>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation__AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget126>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_Windows_Storage_Streams_IBuffer_j_uint_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -10547,7 +9196,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationProgressHandler_A_uint_j_uint_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget131>(global::Windows.Foundation.AsyncOperationProgressHandler_A_uint_j_uint_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget127>(global::Windows.Foundation.AsyncOperationProgressHandler_A_uint_j_uint_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -10592,7 +9241,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<uint, uint>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget132>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget128>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -10764,7 +9413,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__AsyncOperationProgressHandler_A_uint_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget133>(global::Windows.Foundation.AsyncOperationProgressHandler_A_uint_j_uint_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation__AsyncOperationProgressHandler_A_uint_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget129>(global::Windows.Foundation.AsyncOperationProgressHandler_A_uint_j_uint_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -10839,7 +9488,7 @@ namespace Windows.Foundation
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation__AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget134>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation__AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget130>(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler_A_uint_j_uint_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -10900,7 +9549,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_bool_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<bool>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget135>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_bool_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget131>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_bool_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -11061,7 +9710,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_Streams_IRandomAccessStream_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.Streams.IRandomAccessStream>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget136>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_Streams_IRandomAccessStream_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget132>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_Streams_IRandomAccessStream_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -11222,7 +9871,7 @@ namespace Windows.Foundation
 					unsafe_handler = (global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_StorageFile_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFile>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget137>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_StorageFile_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget133>(global::Windows.Foundation.AsyncOperationCompletedHandler_A_Windows_Storage_StorageFile_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -13920,7 +12569,7 @@ namespace Windows.Foundation.Collections
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_Foundation_Collections__MapChangedEventHandler_A_string_j_string_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget115>(global::Windows.Foundation.Collections.MapChangedEventHandler_A_string_j_string_V___Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_Foundation_Collections__MapChangedEventHandler_A_string_j_string_V_ = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget113>(global::Windows.Foundation.Collections.MapChangedEventHandler_A_string_j_string_V___Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -13983,7 +12632,7 @@ namespace Windows.Foundation.Collections
 					unsafe_vhnd = (global::Windows.Foundation.Collections.MapChangedEventHandler_A_string_j_string_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										vhnd, 
 										typeof(global::Windows.Foundation.Collections.MapChangedEventHandler<string, string>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget116>(global::Windows.Foundation.Collections.MapChangedEventHandler_A_string_j_string_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget114>(global::Windows.Foundation.Collections.MapChangedEventHandler_A_string_j_string_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -14365,154 +13014,6 @@ namespace Windows.Foundation.Collections
 
 		// v-table for 'Windows.Foundation.Collections.IIterator<System.Collections.Generic.KeyValuePair<string,Windows.ApplicationModel.Resources.Core.NamedResource>>'
 		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::System.Collections.Generic.KeyValuePair<string, global::Windows.ApplicationModel.Resources.Core.NamedResource>>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_Current = 6;
-			internal const int idx_get_HasCurrent = 7;
-			internal const int idx_MoveNext = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
-
-	// Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.DeviceInformation>
-	public unsafe static class IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.DeviceInformation>'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Enumeration.DeviceInformation get_Current(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Enumeration.DeviceInformation __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>, global::Windows.Devices.Enumeration.DeviceInformation>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.Vtbl.idx_get_Current
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool get_HasCurrent(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.Vtbl.idx_get_HasCurrent
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool MoveNext(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.Vtbl.idx_MoveNext
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			// Signature, Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.DeviceInformation>.GetMany, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [Mcg.CodeGen.ArrayMarshaller] rg_Windows_Devices_Enumeration_DeviceInformation__Windows_Devices_Enumeration__DeviceInformation * *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] uint__unsigned int, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static uint GetMany(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Enumeration.DeviceInformation[] items)
-			{
-				// Setup
-				uint unsafe_items_mcgLength = 0;
-				global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl*** unsafe_items = default(global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl***);
-				uint unsafe___value__retval;
-				uint __value__retval;
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					if (items != null)
-						unsafe_items_mcgLength = (uint)items.Length;
-					if (items != null)
-						unsafe_items = (global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl***)global::McgInterop.McgHelpers.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(unsafe_items_mcgLength * sizeof(global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl**))));
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle, 
-										global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.Vtbl.idx_GetMany, 
-										unsafe_items_mcgLength, 
-										unsafe_items, 
-										&(unsafe___value__retval)
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					__value__retval = unsafe___value__retval;
-					if (items != null)
-						for (uint mcgIdx = 0; (mcgIdx < unsafe_items_mcgLength); mcgIdx++)
-						{
-							// [fwd] [out] [optional] [Mcg.CodeGen.WinRTClassMarshaller] Windows_Devices_Enumeration_DeviceInformation__Windows_Devices_Enumeration__DeviceInformation * items
-							items[mcgIdx] = (global::Windows.Devices.Enumeration.DeviceInformation)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToObject(
-												((global::System.IntPtr)unsafe_items[mcgIdx]), 
-												typeof(global::Windows.Devices.Enumeration.DeviceInformation).TypeHandle
-											);
-						}
-					// Return
-					return __value__retval;
-				}
-				finally
-				{
-					// Cleanup
-					if (unsafe_items != null)
-						for (uint mcgIdx_1 = 0; (mcgIdx_1 < unsafe_items_mcgLength); mcgIdx_1++)
-						{
-							// [fwd] [in] [out] [optional] [Mcg.CodeGen.WinRTClassMarshaller] Windows_Devices_Enumeration_DeviceInformation__Windows_Devices_Enumeration__DeviceInformation * items
-							global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_items[mcgIdx_1])));
-						}
-					global::System.Runtime.InteropServices.ExternalInterop.SafeCoTaskMemFree(unsafe_items);
-				}
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.Current")]
-			global::Windows.Devices.Enumeration.DeviceInformation global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>.get_Current()
-			{
-				global::Windows.Devices.Enumeration.DeviceInformation __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.StubClass.get_Current(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.HasCurrent")]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>.get_HasCurrent()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.StubClass.get_HasCurrent(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>.MoveNext()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.StubClass.MoveNext(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			uint global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>.GetMany(global::Windows.Devices.Enumeration.DeviceInformation[] items)
-			{
-				uint __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_DeviceInformation_V___Impl.StubClass.GetMany(
-									this, 
-									items
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.DeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.DeviceInformation>))]
 		public unsafe partial struct Vtbl
 		{
 			internal const int idx_get_Current = 6;
@@ -16889,302 +15390,6 @@ namespace Windows.Foundation.Collections
 			internal const int idx_GetMany = 9;
 		}
 	}
-
-	// Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation>
-	public unsafe static class IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation>'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Enumeration.IDeviceInformation get_Current(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Enumeration.IDeviceInformation __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>, global::Windows.Devices.Enumeration.IDeviceInformation>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.Vtbl.idx_get_Current
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool get_HasCurrent(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.Vtbl.idx_get_HasCurrent
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool MoveNext(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.Vtbl.idx_MoveNext
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			// Signature, Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation>.GetMany, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [Mcg.CodeGen.ArrayMarshaller] rg_Windows_Devices_Enumeration_IDeviceInformation__Windows_Devices_Enumeration__IDeviceInformation * *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] uint__unsigned int, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static uint GetMany(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Enumeration.IDeviceInformation[] items)
-			{
-				// Setup
-				uint unsafe_items_mcgLength = 0;
-				global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl*** unsafe_items = default(global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl***);
-				uint unsafe___value__retval;
-				uint __value__retval;
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					if (items != null)
-						unsafe_items_mcgLength = (uint)items.Length;
-					if (items != null)
-						unsafe_items = (global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl***)global::McgInterop.McgHelpers.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(unsafe_items_mcgLength * sizeof(global::Windows.Devices.Enumeration.IDeviceInformation__Impl.Vtbl**))));
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>).TypeHandle, 
-										global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.Vtbl.idx_GetMany, 
-										unsafe_items_mcgLength, 
-										unsafe_items, 
-										&(unsafe___value__retval)
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					__value__retval = unsafe___value__retval;
-					if (items != null)
-						for (uint mcgIdx = 0; (mcgIdx < unsafe_items_mcgLength); mcgIdx++)
-						{
-							// [fwd] [out] [optional] [Mcg.CodeGen.ComInterfaceMarshaller] Windows_Devices_Enumeration_IDeviceInformation__Windows_Devices_Enumeration__IDeviceInformation * items
-							items[mcgIdx] = (global::Windows.Devices.Enumeration.IDeviceInformation)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToObject(
-												((global::System.IntPtr)unsafe_items[mcgIdx]), 
-												typeof(global::Windows.Devices.Enumeration.IDeviceInformation).TypeHandle
-											);
-						}
-					// Return
-					return __value__retval;
-				}
-				finally
-				{
-					// Cleanup
-					if (unsafe_items != null)
-						for (uint mcgIdx_1 = 0; (mcgIdx_1 < unsafe_items_mcgLength); mcgIdx_1++)
-						{
-							// [fwd] [in] [out] [optional] [Mcg.CodeGen.ComInterfaceMarshaller] Windows_Devices_Enumeration_IDeviceInformation__Windows_Devices_Enumeration__IDeviceInformation * items
-							global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_items[mcgIdx_1])));
-						}
-					global::System.Runtime.InteropServices.ExternalInterop.SafeCoTaskMemFree(unsafe_items);
-				}
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.Current")]
-			global::Windows.Devices.Enumeration.IDeviceInformation global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>.get_Current()
-			{
-				global::Windows.Devices.Enumeration.IDeviceInformation __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.StubClass.get_Current(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.HasCurrent")]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>.get_HasCurrent()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.StubClass.get_HasCurrent(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>.MoveNext()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.StubClass.MoveNext(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			uint global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>.GetMany(global::Windows.Devices.Enumeration.IDeviceInformation[] items)
-			{
-				uint __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation_V___Impl.StubClass.GetMany(
-									this, 
-									items
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_Current = 6;
-			internal const int idx_get_HasCurrent = 7;
-			internal const int idx_MoveNext = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
-
-	// Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation2>
-	public unsafe static class IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl
-	{
-		// StubClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation2>'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Devices.Enumeration.IDeviceInformation2 get_Current(global::System.__ComObject __this)
-			{
-				global::Windows.Devices.Enumeration.IDeviceInformation2 __ret = global::McgInterop.ForwardComSharedStubs.Func_TResult__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>, global::Windows.Devices.Enumeration.IDeviceInformation2>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.Vtbl.idx_get_Current
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool get_HasCurrent(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.Vtbl.idx_get_HasCurrent
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool MoveNext(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>>(
-									__this, 
-									global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.Vtbl.idx_MoveNext
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-
-			// Signature, Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation2>.GetMany, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [out] [Mcg.CodeGen.ArrayMarshaller] rg_Windows_Devices_Enumeration_IDeviceInformation2__Windows_Devices_Enumeration__IDeviceInformation2 * *, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.BlittableValueMarshaller] uint__unsigned int, 
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static uint GetMany(
-						global::System.__ComObject __this, 
-						global::Windows.Devices.Enumeration.IDeviceInformation2[] items)
-			{
-				// Setup
-				uint unsafe_items_mcgLength = 0;
-				global::Windows.Devices.Enumeration.IDeviceInformation2__Impl.Vtbl*** unsafe_items = default(global::Windows.Devices.Enumeration.IDeviceInformation2__Impl.Vtbl***);
-				uint unsafe___value__retval;
-				uint __value__retval;
-				int unsafe___return__;
-				try
-				{
-					// Marshalling
-					if (items != null)
-						unsafe_items_mcgLength = (uint)items.Length;
-					if (items != null)
-						unsafe_items = (global::Windows.Devices.Enumeration.IDeviceInformation2__Impl.Vtbl***)global::McgInterop.McgHelpers.CoTaskMemAllocAndZeroMemory(((global::System.IntPtr)checked(unsafe_items_mcgLength * sizeof(global::Windows.Devices.Enumeration.IDeviceInformation2__Impl.Vtbl**))));
-					// Call to native method
-					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
-										__this, 
-										typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>).TypeHandle, 
-										global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.Vtbl.idx_GetMany, 
-										unsafe_items_mcgLength, 
-										unsafe_items, 
-										&(unsafe___value__retval)
-									);
-					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-					__value__retval = unsafe___value__retval;
-					if (items != null)
-						for (uint mcgIdx = 0; (mcgIdx < unsafe_items_mcgLength); mcgIdx++)
-						{
-							// [fwd] [out] [optional] [Mcg.CodeGen.ComInterfaceMarshaller] Windows_Devices_Enumeration_IDeviceInformation2__Windows_Devices_Enumeration__IDeviceInformation2 * items
-							items[mcgIdx] = (global::Windows.Devices.Enumeration.IDeviceInformation2)global::System.Runtime.InteropServices.McgModuleManager.ComInterfaceToObject(
-												((global::System.IntPtr)unsafe_items[mcgIdx]), 
-												typeof(global::Windows.Devices.Enumeration.IDeviceInformation2).TypeHandle
-											);
-						}
-					// Return
-					return __value__retval;
-				}
-				finally
-				{
-					// Cleanup
-					if (unsafe_items != null)
-						for (uint mcgIdx_1 = 0; (mcgIdx_1 < unsafe_items_mcgLength); mcgIdx_1++)
-						{
-							// [fwd] [in] [out] [optional] [Mcg.CodeGen.ComInterfaceMarshaller] Windows_Devices_Enumeration_IDeviceInformation2__Windows_Devices_Enumeration__IDeviceInformation2 * items
-							global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_items[mcgIdx_1])));
-						}
-					global::System.Runtime.InteropServices.ExternalInterop.SafeCoTaskMemFree(unsafe_items);
-				}
-			}
-		}
-
-		// DispatchClass for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.Current")]
-			global::Windows.Devices.Enumeration.IDeviceInformation2 global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>.get_Current()
-			{
-				global::Windows.Devices.Enumeration.IDeviceInformation2 __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.StubClass.get_Current(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Foundation.Collections.IIterator`1.HasCurrent")]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>.get_HasCurrent()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.StubClass.get_HasCurrent(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			bool global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>.MoveNext()
-			{
-				bool __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.StubClass.MoveNext(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			uint global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>.GetMany(global::Windows.Devices.Enumeration.IDeviceInformation2[] items)
-			{
-				uint __retVal = global::Windows.Foundation.Collections.IIterator_A_Windows_Devices_Enumeration_IDeviceInformation2_V___Impl.StubClass.GetMany(
-									this, 
-									items
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Foundation.Collections.IIterator<Windows.Devices.Enumeration.IDeviceInformation2>'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.Devices.Enumeration.IDeviceInformation2>))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_Current = 6;
-			internal const int idx_get_HasCurrent = 7;
-			internal const int idx_MoveNext = 8;
-			internal const int idx_GetMany = 9;
-		}
-	}
 }
 
 namespace Windows.Foundation.Diagnostics
@@ -17375,7 +15580,7 @@ namespace Windows.Foundation.Diagnostics
 					unsafe_handler = (global::System.EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V___Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::System.EventHandler<global::Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs>).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget138>(global::System.EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V___Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget134>(global::System.EventHandler_A_Windows_Foundation_Diagnostics_TracingStatusChangedEventArgs_V___Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -18874,9 +17079,9 @@ namespace Windows.Storage.Streams
 				pfnGetIids = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget0>(System.Runtime.InteropServices.__vtable_IInspectable.GetIIDs),
 				pfnGetRuntimeClassName = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetRuntimeClassName),
 				pfnGetTrustLevel = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget1>(System.Runtime.InteropServices.__vtable_IInspectable.GetTrustLevel),
-				pfnget_Capacity_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget125>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.get_Capacity__STUB),
-				pfnget_Length_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget125>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.get_Length__STUB),
-				pfnput_Length_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget126>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.put_Length__STUB),
+				pfnget_Capacity_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget121>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.get_Capacity__STUB),
+				pfnget_Length_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget121>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.get_Length__STUB),
+				pfnput_Length_Windows_Storage_Streams__IBuffer = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget122>(global::Windows.Storage.Streams.IBuffer__Impl.Vtbl.put_Length__STUB),
 			}
 			#endif
 			;
@@ -19355,7 +17560,7 @@ namespace Windows.System.Threading
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_System_Threading__WorkItemHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget117>(global::Windows.System.Threading.WorkItemHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_System_Threading__WorkItemHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget115>(global::Windows.System.Threading.WorkItemHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -19426,7 +17631,7 @@ namespace Windows.System.Threading
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_System_Threading__TimerElapsedHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget118>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_System_Threading__TimerElapsedHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget116>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -19488,7 +17693,7 @@ namespace Windows.System.Threading
 					unsafe_handler = (global::Windows.System.Threading.TimerElapsedHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.System.Threading.TimerElapsedHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget119>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget117>(global::Windows.System.Threading.TimerElapsedHandler__Impl.Invoke)
 									);
 					unsafe_timer__retval = null;
 					// Call to native method
@@ -19604,7 +17809,7 @@ namespace Windows.System.Threading
 					unsafe_handler = (global::Windows.System.Threading.WorkItemHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.System.Threading.WorkItemHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget124>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget120>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
 									);
 					unsafe_operation__retval = null;
 					// Call to native method
@@ -19649,7 +17854,7 @@ namespace Windows.System.Threading
 					unsafe_handler = (global::Windows.System.Threading.WorkItemHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.System.Threading.WorkItemHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget124>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget120>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
 									);
 					unsafe_operation__retval = null;
 					// Call to native method
@@ -19696,7 +17901,7 @@ namespace Windows.System.Threading
 					unsafe_handler = (global::Windows.System.Threading.WorkItemHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										handler, 
 										typeof(global::Windows.System.Threading.WorkItemHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget124>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget120>(global::Windows.System.Threading.WorkItemHandler__Impl.Invoke)
 									);
 					unsafe_operation__retval = null;
 					// Call to native method
@@ -25925,7 +24130,7 @@ namespace Windows.UI.Xaml
 					unsafe_value = (global::Windows.UI.Xaml.WindowActivatedEventHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										value, 
 										typeof(global::Windows.UI.Xaml.WindowActivatedEventHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget139>(global::Windows.UI.Xaml.WindowActivatedEventHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget135>(global::Windows.UI.Xaml.WindowActivatedEventHandler__Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -25977,7 +24182,7 @@ namespace Windows.UI.Xaml
 					unsafe_value = (global::Windows.UI.Xaml.WindowClosedEventHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										value, 
 										typeof(global::Windows.UI.Xaml.WindowClosedEventHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget140>(global::Windows.UI.Xaml.WindowClosedEventHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget136>(global::Windows.UI.Xaml.WindowClosedEventHandler__Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -26029,7 +24234,7 @@ namespace Windows.UI.Xaml
 					unsafe_value = (global::Windows.UI.Xaml.WindowSizeChangedEventHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										value, 
 										typeof(global::Windows.UI.Xaml.WindowSizeChangedEventHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget141>(global::Windows.UI.Xaml.WindowSizeChangedEventHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget137>(global::Windows.UI.Xaml.WindowSizeChangedEventHandler__Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -26081,7 +24286,7 @@ namespace Windows.UI.Xaml
 					unsafe_value = (global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Vtbl**)global::System.Runtime.InteropServices.McgModuleManager.DelegateToComInterface(
 										value, 
 										typeof(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler).TypeHandle, 
-										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget142>(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Invoke)
+										global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget138>(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Invoke)
 									);
 					// Call to native method
 					unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
@@ -26304,7 +24509,7 @@ namespace Windows.UI.Xaml
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_UI_Xaml__WindowActivatedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget143>(global::Windows.UI.Xaml.WindowActivatedEventHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_UI_Xaml__WindowActivatedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget139>(global::Windows.UI.Xaml.WindowActivatedEventHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -26379,7 +24584,7 @@ namespace Windows.UI.Xaml
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_UI_Xaml__WindowClosedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget144>(global::Windows.UI.Xaml.WindowClosedEventHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_UI_Xaml__WindowClosedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget140>(global::Windows.UI.Xaml.WindowClosedEventHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -26454,7 +24659,7 @@ namespace Windows.UI.Xaml
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_UI_Xaml__WindowSizeChangedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget145>(global::Windows.UI.Xaml.WindowSizeChangedEventHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_UI_Xaml__WindowSizeChangedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget141>(global::Windows.UI.Xaml.WindowSizeChangedEventHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;
@@ -26529,7 +24734,7 @@ namespace Windows.UI.Xaml
 				pfnQueryInterface = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfQueryInterface>(System.Runtime.InteropServices.__vtable_IUnknown.QueryInterface),
 				pfnAddRef = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfAddRef>(System.Runtime.InteropServices.__vtable_IUnknown.AddRef),
 				pfnRelease = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfRelease>(System.Runtime.InteropServices.__vtable_IUnknown.Release),
-				pfnInvoke_Windows_UI_Xaml__WindowVisibilityChangedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget146>(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Vtbl.Invoke__STUB),
+				pfnInvoke_Windows_UI_Xaml__WindowVisibilityChangedEventHandler = global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget142>(global::Windows.UI.Xaml.WindowVisibilityChangedEventHandler__Impl.Vtbl.Invoke__STUB),
 			}
 			#endif
 			;

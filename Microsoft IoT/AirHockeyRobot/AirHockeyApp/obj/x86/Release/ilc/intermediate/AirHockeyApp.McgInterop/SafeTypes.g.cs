@@ -1235,133 +1235,19 @@ namespace Windows.Devices
 	}
 }
 
-namespace Windows.Devices.Enumeration
+namespace Windows.Devices.Gpio
 {
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioController))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DeviceInformationCollection : global::System.__ComObject, global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>, global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>
+	public unsafe sealed class GpioController : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioController
 	{
-		global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation> global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<global::Windows.Devices.Enumeration.DeviceInformation>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-							);
-		}
-
-		int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Devices.Enumeration.DeviceInformation>.Count
-		{
-			get
-			{
-				return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-									this, 
-									typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-								);
-			}
-		}
-
-		global::Windows.Devices.Enumeration.DeviceInformation global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>.this[int index]
-		{
-			get
-			{
-				return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Devices.Enumeration.DeviceInformation>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Devices.Enumeration.DeviceInformation>).TypeHandle
-									))[index];
-			}
-		}
-
-		public DeviceInformationCollection(global::System.IntPtr dummy)
+		public GpioController(global::System.IntPtr dummy)
 		{
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Enumeration.IDeviceInformation))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DeviceInformation : global::System.__ComObject, global::Windows.Devices.Enumeration.IDeviceInformation, global::Windows.Devices.Enumeration.IDeviceInformation2
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Id")]
-		public string get_Id()
-		{
-			string __retVal = global::Windows.Devices.Enumeration.IDeviceInformation__Impl.StubClass.get_Id(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> FindAllAsync(string aqsFilter)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> retval;
-			retval = __Factory_Windows_Devices_Enumeration__IDeviceInformationStatics_FindAllAsync(
-								"Windows.Devices.Enumeration.DeviceInformation", 
-								aqsFilter
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __Factory_Windows_Devices_Enumeration__IDeviceInformationStatics_FindAllAsync(
-					string typeName, 
-					string aqsFilter)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> __pRetVal;
-			__pRetVal = global::Windows.Devices.Enumeration.IDeviceInformationStatics__Impl.StubClass.FindAllAsync(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.Devices.Enumeration.IDeviceInformationStatics).TypeHandle
-												), 
-								aqsFilter
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		public DeviceInformation(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDeviceInformationStatics
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> FindAllAsync(string aqsFilter);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDeviceInformation
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Id")]
-		string get_Id();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IDeviceInformation2
-	{
-	}
-}
-
-namespace Windows.Devices.Gpio
-{
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPin))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -1375,54 +1261,10 @@ namespace Windows.Devices.Gpio
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ValueChanged")]
-		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ValueChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs> handler)
-		{
-			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.add_ValueChanged(
-								this, 
-								handler
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ValueChanged")]
-		public void remove_ValueChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
-		{
-			global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.remove_ValueChanged(
-								this, 
-								token
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public void SetDriveMode(global::Windows.Devices.Gpio.GpioPinDriveMode value)
-		{
-			global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.SetDriveMode(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public void Write(global::Windows.Devices.Gpio.GpioPinValue value)
-		{
-			global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.Write(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		public global::Windows.Devices.Gpio.GpioPinValue Read()
 		{
-			global::Windows.Devices.Gpio.GpioPinValue __retVal = global::Windows.Devices.Gpio.IGpioPin__Impl.StubClass.Read(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
+			global::McgInterop.McgHelpers.FailFastForReducedMethod();
+			return default(global::Windows.Devices.Gpio.GpioPinValue);
 		}
 
 		public GpioPin(global::System.IntPtr dummy)
@@ -1430,67 +1272,10 @@ namespace Windows.Devices.Gpio
 		}
 	}
 
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class GpioPinValueChangedEventArgs : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs
+	public unsafe interface IGpioController
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Edge")]
-		public global::Windows.Devices.Gpio.GpioPinEdge get_Edge()
-		{
-			global::Windows.Devices.Gpio.GpioPinEdge __retVal = global::Windows.Devices.Gpio.IGpioPinValueChangedEventArgs__Impl.StubClass.get_Edge(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public GpioPinValueChangedEventArgs(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Gpio.IGpioController))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class GpioController : global::System.__ComObject, global::Windows.Devices.Gpio.IGpioController
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Devices.Gpio.GpioPin OpenPin(int pinNumber)
-		{
-			global::Windows.Devices.Gpio.GpioPin __retVal = global::Windows.Devices.Gpio.IGpioController__Impl.StubClass.OpenPin(
-								this, 
-								pinNumber
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::Windows.Devices.Gpio.GpioController GetDefault()
-		{
-			global::Windows.Devices.Gpio.GpioController retval;
-			retval = __Factory_Windows_Devices_Gpio__IGpioControllerStatics_GetDefault("Windows.Devices.Gpio.GpioController");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::Windows.Devices.Gpio.GpioController __Factory_Windows_Devices_Gpio__IGpioControllerStatics_GetDefault(string typeName)
-		{
-			global::Windows.Devices.Gpio.GpioController __pRetVal;
-			__pRetVal = global::Windows.Devices.Gpio.IGpioControllerStatics__Impl.StubClass.GetDefault(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-									typeName, 
-									typeof(global::Windows.Devices.Gpio.IGpioControllerStatics).TypeHandle
-								));
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		public GpioController(global::System.IntPtr dummy)
-		{
-		}
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -1498,70 +1283,7 @@ namespace Windows.Devices.Gpio
 	public unsafe interface IGpioPin : global::System.IDisposable
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "ValueChanged")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_ValueChanged(global::Windows.Foundation.TypedEventHandler<global::Windows.Devices.Gpio.GpioPin, global::Windows.Devices.Gpio.GpioPinValueChangedEventArgs> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "ValueChanged")]
-		void remove_ValueChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetDriveMode(global::Windows.Devices.Gpio.GpioPinDriveMode value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void Write(global::Windows.Devices.Gpio.GpioPinValue value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		global::Windows.Devices.Gpio.GpioPinValue Read();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IGpioPinValueChangedEventArgs
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Edge")]
-		global::Windows.Devices.Gpio.GpioPinEdge get_Edge();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IGpioControllerStatics
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Devices.Gpio.GpioController GetDefault();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IGpioController
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Devices.Gpio.GpioPin OpenPin(int pinNumber);
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum GpioPinEdge
-	{
-		FallingEdge = 0,
-		RisingEdge = 1,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum GpioPinDriveMode
-	{
-		Input = 0,
-		Output = 1,
-		InputPullUp = 2,
-		InputPullDown = 3,
-		OutputOpenDrain = 4,
-		OutputOpenDrainPullUp = 5,
-		OutputOpenSource = 6,
-		OutputOpenSourcePullDown = 7,
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -1571,226 +1293,6 @@ namespace Windows.Devices.Gpio
 	{
 		Low = 0,
 		High = 1,
-	}
-}
-
-namespace Windows.Devices.Spi
-{
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiConnectionSettings))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class SpiConnectionSettings : global::System.__ComObject, global::Windows.Devices.Spi.ISpiConnectionSettings
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public SpiConnectionSettings(int chipSelectLine)
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_Devices_Spi__ISpiConnectionSettingsFactory_Create(
-								"Windows.Devices.Spi.SpiConnectionSettings", 
-								chipSelectLine
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_Devices_Spi__ISpiConnectionSettingsFactory_Create(
-					string typeName, 
-					int chipSelectLine)
-		{
-			global::System.IntPtr __pRetVal;
-			__pRetVal = global::Windows.Devices.Spi.ISpiConnectionSettingsFactory__Impl.StubClass.Create(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.Devices.Spi.ISpiConnectionSettingsFactory).TypeHandle
-												), 
-								chipSelectLine
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "DataBitLength")]
-		public void put_DataBitLength(int value)
-		{
-			global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_DataBitLength(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ClockFrequency")]
-		public void put_ClockFrequency(int value)
-		{
-			global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_ClockFrequency(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SharingMode")]
-		public void put_SharingMode(global::Windows.Devices.Spi.SpiSharingMode value)
-		{
-			global::Windows.Devices.Spi.ISpiConnectionSettings__Impl.StubClass.put_SharingMode(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		public SpiConnectionSettings(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Spi.ISpiDevice))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.IDisposable))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class SpiDevice : global::System.__ComObject, global::Windows.Devices.Spi.ISpiDevice, global::System.IDisposable
-	{
-		public void Dispose()
-		{
-			global::System.IDisposable__Impl.StubClass.Close(this);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public void TransferFullDuplex(
-					byte[] writeBuffer, 
-					byte[] readBuffer)
-		{
-			global::Windows.Devices.Spi.ISpiDevice__Impl.StubClass.TransferFullDuplex(
-								this, 
-								writeBuffer, 
-								readBuffer
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static string GetDeviceSelector()
-		{
-			string retval;
-			retval = __Factory_Windows_Devices_Spi__ISpiDeviceStatics_GetDeviceSelector("Windows.Devices.Spi.SpiDevice");
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static string __Factory_Windows_Devices_Spi__ISpiDeviceStatics_GetDeviceSelector(string typeName)
-		{
-			string __pRetVal;
-			__pRetVal = global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.StubClass.GetDeviceSelector(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-									typeName, 
-									typeof(global::Windows.Devices.Spi.ISpiDeviceStatics).TypeHandle
-								));
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> FromIdAsync(
-					string busId, 
-					global::Windows.Devices.Spi.SpiConnectionSettings settings)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> retval;
-			retval = __Factory_Windows_Devices_Spi__ISpiDeviceStatics_FromIdAsync(
-								"Windows.Devices.Spi.SpiDevice", 
-								busId, 
-								settings
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return retval;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> __Factory_Windows_Devices_Spi__ISpiDeviceStatics_FromIdAsync(
-					string typeName, 
-					string busId, 
-					global::Windows.Devices.Spi.SpiConnectionSettings settings)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> __pRetVal;
-			__pRetVal = global::Windows.Devices.Spi.ISpiDeviceStatics__Impl.StubClass.FromIdAsync(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.Devices.Spi.ISpiDeviceStatics).TypeHandle
-												), 
-								busId, 
-								settings
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __pRetVal;
-		}
-
-		public SpiDevice(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ISpiConnectionSettingsFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr Create(int chipSelectLine);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ISpiConnectionSettings
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "DataBitLength")]
-		void put_DataBitLength(int value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ClockFrequency")]
-		void put_ClockFrequency(int value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "SharingMode")]
-		void put_SharingMode(global::Windows.Devices.Spi.SpiSharingMode value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ISpiDeviceStatics
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		string GetDeviceSelector();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Spi.SpiDevice> FromIdAsync(
-					string busId, 
-					global::Windows.Devices.Spi.SpiConnectionSettings settings);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ISpiDevice : global::System.IDisposable
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void TransferFullDuplex(
-					byte[] writeBuffer, 
-					byte[] readBuffer);
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum SpiSharingMode
-	{
-		Exclusive = 0,
-		Shared = 1,
 	}
 }
 
@@ -2686,33 +2188,6 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DualApiPartitionAttribute : global::System.Attribute
-	{
-		public DualApiPartitionAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DualApiPartitionAttribute\'.  Windows Runtime attribute types " +
-					"are not constructable.");
-		}
-		public uint version;
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class AllowMultipleAttribute : global::System.Attribute
 	{
 		public AllowMultipleAttribute()
@@ -2791,15 +2266,14 @@ namespace Windows.Foundation.Metadata
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class RangeAttribute : global::System.Attribute
+	public unsafe sealed class DualApiPartitionAttribute : global::System.Attribute
 	{
-		public RangeAttribute(
-					int minValue, 
-					int maxValue)
+		public DualApiPartitionAttribute()
 		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.RangeAttribute\'.  Windows Runtime attribute types are not con" +
-					"structable.");
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DualApiPartitionAttribute\'.  Windows Runtime attribute types " +
+					"are not constructable.");
 		}
+		public uint version;
 	}
 
 	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 

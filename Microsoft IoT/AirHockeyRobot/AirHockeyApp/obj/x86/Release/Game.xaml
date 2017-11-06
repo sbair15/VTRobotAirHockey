@@ -16,18 +16,18 @@
                 <Slider x:ConnectionId='15' x:Name="slider" Canvas.Left="-65" Canvas.Top="712" Width="214" Maximum="255"                                   />
                 <TextBlock x:ConnectionId='16' x:Name="brightnessTextBlock" Canvas.Left="181" TextWrapping="Wrap" Text="0" Canvas.Top="708" FontSize="26.667" Height="48" FontWeight="Light"/>
                 <Ellipse x:ConnectionId='17' x:Name="mallet" Fill="Red" Height="50" Canvas.Left="785" Stroke="White" Canvas.Top="347" Width="50"/>
-                <Button x:ConnectionId='18' x:Name="moveMalletButton" Content="Move Mallet" Canvas.Left="1350" Canvas.Top="34" Height="50" Width="117"                                />
-                <Button x:ConnectionId='19' x:Name="mirrorButton" Content="Mirror" Canvas.Left="1228" Canvas.Top="34" Height="50" Width="117"                           />
-                <Canvas x:ConnectionId='20' x:Name="textCanvas" Height="611" Width="412" Canvas.Left="-65" Canvas.Top="10">
-                    <TextBlock x:ConnectionId='22' x:Name="outputTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" FontSize="20" FontWeight="Light" Canvas.Left="10" Canvas.Top="127"/>
-                    <TextBlock x:ConnectionId='23' x:Name="translatedTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Translated (X,Y)" Canvas.Top="154" FontSize="20" FontWeight="Light"/>
-                    <TextBlock x:ConnectionId='24' x:Name="statusTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Status Text" Canvas.Top="235" FontSize="20" FontWeight="Light"/>
-                    <TextBlock x:ConnectionId='25' x:Name="malletLocationTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Mallet (X,Y)" Canvas.Top="181" FontSize="20" FontWeight="Light"/>
-                    <TextBlock x:ConnectionId='26' x:Name="centerOfMassTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Center of Mass (X,Y)" Canvas.Top="208" FontSize="20" FontWeight="Light"/>
-                    <TextBlock x:ConnectionId='27' x:Name="textBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Diagnostics" Canvas.Top="7" FontSize="80" FontWeight="Light"/>
-                    <TextBlock x:ConnectionId='28' x:Name="scoreTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" FontSize="20" FontWeight="Light" Canvas.Left="10" Canvas.Top="262"/>
+                
+                <Button x:ConnectionId='18' x:Name="mirrorButton" Content="Mirror" Canvas.Left="1228" Canvas.Top="34" Height="50" Width="117"                           />
+                <Canvas x:ConnectionId='19' x:Name="textCanvas" Height="611" Width="412" Canvas.Left="-65" Canvas.Top="10">
+                    <TextBlock x:ConnectionId='21' x:Name="outputTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" FontSize="20" FontWeight="Light" Canvas.Left="10" Canvas.Top="127"/>
+                    <TextBlock x:ConnectionId='22' x:Name="translatedTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Translated (X,Y)" Canvas.Top="154" FontSize="20" FontWeight="Light"/>
+                    <TextBlock x:ConnectionId='23' x:Name="statusTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Status Text" Canvas.Top="235" FontSize="20" FontWeight="Light"/>
+                    <TextBlock x:ConnectionId='24' x:Name="malletLocationTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Mallet (X,Y)" Canvas.Top="181" FontSize="20" FontWeight="Light"/>
+                    <TextBlock x:ConnectionId='25' x:Name="centerOfMassTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Center of Mass (X,Y)" Canvas.Top="208" FontSize="20" FontWeight="Light"/>
+                    <TextBlock x:ConnectionId='26' x:Name="textBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Diagnostics" Canvas.Top="7" FontSize="80" FontWeight="Light"/>
+                    <TextBlock x:ConnectionId='27' x:Name="scoreTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" FontSize="20" FontWeight="Light" Canvas.Left="10" Canvas.Top="262"/>
                 </Canvas>
-                <Button x:ConnectionId='21' x:Name="hideTextButton" Content="Hide Text" Canvas.Left="1106" Canvas.Top="34" Height="50" Width="117"                              />
+                <Button x:ConnectionId='20' x:Name="hideTextButton" Content="Hide Text" Canvas.Left="1106" Canvas.Top="34" Height="50" Width="117"                              />
             </Canvas>
             <Canvas x:ConnectionId='2' x:Name="gameCanvas" Width="1366" Height="766" Background="Black" Canvas.Left="117" Visibility="Collapsed">
                 <TextBlock x:ConnectionId='7' x:Name="gameOutputTextBlock" Canvas.Left="10" TextWrapping="Wrap" Text="Game Output Text" Canvas.Top="257" FontSize="96" FontWeight="Light" TextAlignment="Center" Width="1346" HorizontalAlignment="Center" Visibility="Collapsed"/>

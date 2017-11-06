@@ -16,7 +16,7 @@
                 <Slider x:Name="slider" Canvas.Left="-65" Canvas.Top="712" Width="214" Maximum="255" ValueChanged="slider_ValueChanged"/>
                 <TextBlock x:Name="brightnessTextBlock" Canvas.Left="181" TextWrapping="Wrap" Text="0" Canvas.Top="708" FontSize="26.667" Height="48" FontWeight="Light"/>
                 <Ellipse x:Name="mallet" Fill="Red" Height="50" Canvas.Left="785" Stroke="White" Canvas.Top="347" Width="50"/>
-                <Button x:Name="moveMalletButton" Content="Move Mallet" Canvas.Left="1350" Canvas.Top="34" Height="50" Width="117" Click="moveMalletButton_Click" />
+                
                 <Button x:Name="mirrorButton" Content="Mirror" Canvas.Left="1228" Canvas.Top="34" Height="50" Width="117" Click="mirrorButton_Click"/>
                 <Canvas x:Name="textCanvas" Height="611" Width="412" Canvas.Left="-65" Canvas.Top="10">
                     <TextBlock x:Name="outputTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" FontSize="20" FontWeight="Light" Canvas.Left="10" Canvas.Top="127"/>
