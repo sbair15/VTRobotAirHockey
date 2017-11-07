@@ -14,4 +14,7 @@
     <AuthenticationMode>Universal</AuthenticationMode>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <UseSimulator>false</UseSimulator>
+  </PropertyGroup>
 </Project>

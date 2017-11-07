@@ -14,6 +14,10 @@ using System.Collections.Generic;
 using Windows.System.Threading;
 using AirHockeyHelper;
 
+
+using System.Runtime.InteropServices;
+using System.Windows.Forms.Cursor.Position;
+
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
 
 namespace AirHockeyApp
@@ -232,7 +236,7 @@ namespace AirHockeyApp
             });
         }*/
 
-      /*  private void runDecisionThread(Point puckPosition)
+        /*private void runDecisionThread(Point puckPosition)
         {
             ThreadPool.RunAsync((s) =>
             {
@@ -282,13 +286,18 @@ namespace AirHockeyApp
             });
         }*/
 
+        private void runDecisionThread2(Point puckPosition)
+        {
+
+        }
+
         #region Test Methods
 
         // Use the mouse to simulate puck movement
         private void MainCanvas_PointerMoved(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
         {
             var puckPosition = e.GetCurrentPoint(mainCanvas).Position;
-            //runDecisionThread(puckPosition);
+            runDecisionThread2(puckPosition);
         }
 
         // Testing without an airhockey table
@@ -311,20 +320,20 @@ namespace AirHockeyApp
                 }
             }, WorkItemPriority.High);
 
-            ///runUIThread();
+           // runUIThread();
         }
 
         #endregion
 
         // Draw the UI
-    /*    private void runUIThread()
+       /* private void runUIThread()
         {
             ThreadPool.RunAsync(async (s) =>
             {
                 while (!stopThread)
                 {
-                    var puckPosition = robot.AI.GetPuckPosition();
-
+                    // var puckPosition = robot.AI.GetPuckPosition();
+                    Point puckPosition = new Point(System.Windows.Forms.Cursor.Position.X, System.Windows.Forms.Cursor.Position.Y);
                     clearLines();
                     //drawDot(puckPosition);
                     if (puckPosition != CoordinateHelper.INVALID_POINT)
@@ -332,7 +341,7 @@ namespace AirHockeyApp
                         drawPuck(puckPosition);
                     }
 
-                    drawMallet(robot.GetOffsets());
+                   /* drawMallet(robot.GetOffsets());
                     drawCenterOfMass(robot.AI.GetPuckCenterOfMass());
 
                     // Draw line from mallet to destination
