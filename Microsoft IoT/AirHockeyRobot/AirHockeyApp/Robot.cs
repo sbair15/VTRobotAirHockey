@@ -54,7 +54,7 @@ namespace AirHockeyApp
         public event EventHandler<EventArgs> RobotGoalSensorTriggered;
         public event EventHandler<EventArgs> HumanGoalSensorTriggered;
 
-      //  public StepperLib StepperX, StepperY;
+        //public StepperLib StepperX, StepperY;
 
         public AIHelper AI;
 

@@ -2,7 +2,7 @@
 
 namespace AirHockeyApp
 {
-  /*  public struct Config
+    public struct Config
     {
         public static float
             MOTOR_X_MAX_SPEED = 100000,
@@ -26,5 +26,5 @@ namespace AirHockeyApp
 
         // Lower Y coordinate of the goal
         public const long TABLE_GOAL_Y_BOTTOM = TABLE_HEIGHT / 2 + 150;
-    } */
+    } 
 }

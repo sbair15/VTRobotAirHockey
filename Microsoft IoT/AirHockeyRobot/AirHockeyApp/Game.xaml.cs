@@ -98,7 +98,7 @@ namespace AirHockeyApp
             hideTextButton.Content = (textCanvas.Visibility == Visibility.Visible) ? "Hide Text" : "Show Text";
             textCanvas.Visibility = Visibility.Visible;
             centerOfMass.Visibility = Visibility.Collapsed;
-            mallet.Visibility = Visibility.Collapsed;
+            mallet.Visibility = Visibility.Visible;
 
             Line robotRangeLine = new Line();
             robotRangeLine.Stroke = new SolidColorBrush(Colors.Yellow);
@@ -341,7 +341,7 @@ namespace AirHockeyApp
                         drawPuck(puckPosition);
                     }
 
-                   /* drawMallet(robot.GetOffsets());
+                    drawMallet(robot.GetOffsets());
                     drawCenterOfMass(robot.AI.GetPuckCenterOfMass());
 
                     // Draw line from mallet to destination

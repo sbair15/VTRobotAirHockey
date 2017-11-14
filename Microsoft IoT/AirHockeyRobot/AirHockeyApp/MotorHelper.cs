@@ -4,15 +4,15 @@ using Windows.Foundation;
 
 namespace AirHockeyApp
 {
-   /* public class MotorHelper
+    public class MotorHelper
     {
-        // Coordinates when X and Y are at offset 0
+         //Coordinates when X and Y are at offset 0
         private static Point zeroPoint = new Point(1430, 78);
 
-        // Coordinates when X and Y are at their max offsets
+         //Coordinates when X and Y are at their max offsets
         private static Point maxPoint = new Point(1000, 689);
 
-        // Used to get current mallet and target positions
+        //Used to get current mallet and target positions
         public static Point GetCoordinatesFromOffset(Point offset)
         {
             double x = GetCoordinateXFromOffsetY((long)offset.Y);
@@ -63,5 +63,5 @@ namespace AirHockeyApp
         {
             return new Point(GetOffsetXFromCoordinateY(point.Y), GetOffsetYFromCoordinateX(point.X));
         }
-    }*/
+    }
 }
