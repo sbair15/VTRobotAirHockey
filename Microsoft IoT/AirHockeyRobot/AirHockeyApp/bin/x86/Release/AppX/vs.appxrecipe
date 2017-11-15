@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>84bbfb87-6791-41f9-81bd-8c7acf664936</PackageIdentityName>
     <PackageIdentityPublisher>CN=MSFT</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\AppX</LayoutDir>
     <RegisteredManifestChecksum>BF56DDF44D0DC99912A19771439BB2D2B115436CCCFC66C799DE4915A2CCDF98</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>AirHockeyApp_1.0.0.0_x86__1w720vyc4ccym</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>AirHockeyApp_1w720vyc4ccym!App</RegisteredUserModeAppID>
@@ -28,87 +28,87 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-14T00:15:02.736</Modified>
+      <Modified>2017-11-27T22:37:21.385</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.dll">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.dll">
       <PackagePath>AirHockeyApp.dll</PackagePath>
-      <Modified>2017-11-14T00:15:02.585</Modified>
+      <Modified>2017-11-27T22:37:21.219</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.exe">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.exe">
       <PackagePath>AirHockeyApp.exe</PackagePath>
-      <Modified>2017-11-14T00:15:02.720</Modified>
+      <Modified>2017-11-27T22:37:21.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.pdb">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\AirHockeyApp.pdb">
       <PackagePath>AirHockeyApp.pdb</PackagePath>
-      <Modified>2017-11-14T00:15:02.701</Modified>
+      <Modified>2017-11-27T22:37:21.335</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\diag_icon.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\diag_icon.png">
       <PackagePath>Assets\Icons\diag_icon.png</PackagePath>
       <Modified>2017-10-30T19:41:03.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\game_icon.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\game_icon.png">
       <PackagePath>Assets\Icons\game_icon.png</PackagePath>
       <Modified>2017-10-30T19:41:03.694</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\home_icon.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\home_icon.png">
       <PackagePath>Assets\Icons\home_icon.png</PackagePath>
       <Modified>2017-10-30T19:41:03.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\mirror_icon.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\mirror_icon.png">
       <PackagePath>Assets\Icons\mirror_icon.png</PackagePath>
       <Modified>2017-10-30T19:41:03.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\test_icon.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Icons\test_icon.png">
       <PackagePath>Assets\Icons\test_icon.png</PackagePath>
       <Modified>2017-10-30T19:41:03.697</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-10-30T19:41:03.698</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.699</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.701</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.703</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.704</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T19:41:03.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-07-23T03:08:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\Source\Repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\VTAirHockeyRobot\source\repos\VTRobotAirHockey2\Microsoft IoT\AirHockeyRobot\AirHockeyApp\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-06T23:20:53.805</Modified>
+      <Modified>2017-11-27T22:37:05.026</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

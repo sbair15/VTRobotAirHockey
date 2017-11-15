@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceRemovalHandling", "DeviceRemovalHandling\DeviceRemovalHandling.csproj", "{BBE06407-87CC-4AE2-920D-A5DAC3C840A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grab_UsingGrabLoopThread", "Grab_UsingGrabLoopThread\Grab_UsingGrabLoopThread.csproj", "{5D317EAE-EBE8-41AF-BE4C-A4CAD1D276D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grab", "Grab\Grab.csproj", "{23523F59-9CC2-41A2-9527-EE39579588DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParametrizeCameraSample", "ParametrizeCameraSample\ParametrizeCameraSample.csproj", "{7C105766-15AC-439C-A69F-B33EA4C1455D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBGrab", "VBGrab\VBGrab.vbproj", "{1177D56B-9223-4291-8B3D-01F993A60470}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBParametrizeCameraSample", "VBParametrizeCameraSample\VBParametrizeCameraSample.vbproj", "{6298C17E-4828-4AC3-86BB-D149BF424F76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grab_ChunkImage", "Grab_ChunkImage\Grab_ChunkImage.csproj", "{A86C97E1-E74E-4637-A7E1-E4AB3C0E07B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PylonLiveView", "PylonLiveView\PylonLiveView.csproj", "{F3B8803F-5231-4D54-B588-10BB340890A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCameraDetection", "TestCameraDection\TestCameraDetection.csproj", "{533885C3-D842-4F65-86BF-D0A1F14303A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE06407-87CC-4AE2-920D-A5DAC3C840A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE06407-87CC-4AE2-920D-A5DAC3C840A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE06407-87CC-4AE2-920D-A5DAC3C840A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE06407-87CC-4AE2-920D-A5DAC3C840A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D317EAE-EBE8-41AF-BE4C-A4CAD1D276D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D317EAE-EBE8-41AF-BE4C-A4CAD1D276D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D317EAE-EBE8-41AF-BE4C-A4CAD1D276D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D317EAE-EBE8-41AF-BE4C-A4CAD1D276D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23523F59-9CC2-41A2-9527-EE39579588DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23523F59-9CC2-41A2-9527-EE39579588DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23523F59-9CC2-41A2-9527-EE39579588DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23523F59-9CC2-41A2-9527-EE39579588DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C105766-15AC-439C-A69F-B33EA4C1455D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C105766-15AC-439C-A69F-B33EA4C1455D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C105766-15AC-439C-A69F-B33EA4C1455D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C105766-15AC-439C-A69F-B33EA4C1455D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1177D56B-9223-4291-8B3D-01F993A60470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1177D56B-9223-4291-8B3D-01F993A60470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1177D56B-9223-4291-8B3D-01F993A60470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1177D56B-9223-4291-8B3D-01F993A60470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6298C17E-4828-4AC3-86BB-D149BF424F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6298C17E-4828-4AC3-86BB-D149BF424F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6298C17E-4828-4AC3-86BB-D149BF424F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6298C17E-4828-4AC3-86BB-D149BF424F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86C97E1-E74E-4637-A7E1-E4AB3C0E07B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86C97E1-E74E-4637-A7E1-E4AB3C0E07B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86C97E1-E74E-4637-A7E1-E4AB3C0E07B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86C97E1-E74E-4637-A7E1-E4AB3C0E07B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B8803F-5231-4D54-B588-10BB340890A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B8803F-5231-4D54-B588-10BB340890A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B8803F-5231-4D54-B588-10BB340890A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B8803F-5231-4D54-B588-10BB340890A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533885C3-D842-4F65-86BF-D0A1F14303A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533885C3-D842-4F65-86BF-D0A1F14303A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533885C3-D842-4F65-86BF-D0A1F14303A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533885C3-D842-4F65-86BF-D0A1F14303A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB899A79-A9F6-48C2-94DF-DB9970CDCAE4}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
