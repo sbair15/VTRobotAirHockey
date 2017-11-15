@@ -1,0 +1,12 @@
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\bin\Debug\VBGrab.exe
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\bin\Debug\VBGrab.pdb
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\bin\Debug\VBGrab.xml
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\bin\Debug\Basler.Pylon.dll
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\bin\Debug\Basler.Pylon.xml
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.vbprojResolveAssemblyReference.cache
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.Resources.resources
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.vbproj.GenerateResource.Cache
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.vbproj.CoreCompileInputs.cache
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.exe
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.xml
+C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\VBGrab\obj\Debug\VBGrab.pdb
