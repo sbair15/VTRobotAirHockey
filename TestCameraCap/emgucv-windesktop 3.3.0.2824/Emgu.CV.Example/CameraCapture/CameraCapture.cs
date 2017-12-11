@@ -29,6 +29,8 @@ namespace CameraCapture
         private Mat _hsvFrame;
         private Mat _redDetectFrame;
 
+        private List<PointF> _CircleLocList;
+
 
 
         public CameraCapture()
@@ -52,6 +54,9 @@ namespace CameraCapture
 
          _hsvFrame = new Mat();
          _redDetectFrame = new Mat();
+
+            //Added Array to store a running total of last 10 points
+            _CircleLocList = new List<PointF>();
     }
 
       private void ProcessFrame(object sender, EventArgs arg)
@@ -104,6 +109,42 @@ namespace CameraCapture
                     CvInvoke.Circle(_cannyFrame, Point.Round(center), (int)Math.Ceiling(radius), new MCvScalar(255, 255, 0), 10);
                     //Console.WriteLine("There is a circle");
                 }
+                    //Add only the first center of circle to the list of locations
+                    if (_CircleLocList.Count < 10)
+                    {
+                        _CircleLocList.Add(circles[0].Center);
+                    }
+                    else
+                    {
+                        //Removes least current circle point and then adds most current
+                        _CircleLocList.RemoveAt(0);
+                        _CircleLocList.Add(circles[0].Center);
+                        //Finds the average of the first 5 elements and the next 5 elements
+                        float totalX1 = 0, totalY1 = 0, totalX2 = 0, totalY2 = 0;
+                        int indexCounter = 0;
+                        foreach (PointF p in _CircleLocList)
+                        {
+                            if (indexCounter < 5)
+                            { 
+                                totalX1 += p.X;
+                                totalY1 += p.Y;
+                            }
+                            else
+                            {
+                                totalX2 += p.X;
+                                totalY2 += p.Y;
+                            }
+                            indexCounter += 1;
+                        }
+                        //Finds the average x and y positions
+                        float centerX1 = totalX1 / (_CircleLocList.Count / 2);
+                        float centerY1 = totalY1 / (_CircleLocList.Count / 2);
+                        float centerX2 = totalX2 / (_CircleLocList.Count / 2);
+                        float centerY2 = totalY2 / (_CircleLocList.Count / 2);
+                        //Creates trajectory Line
+                        CvInvoke.Line(_cannyFrame, Point.Round(new PointF(centerX1,centerY1)), Point.Round(new PointF(centerX2, centerY2)), new MCvScalar(0, 0, 0), 5);
+                    }
+
             }
                 
             #endregion
