@@ -1,0 +1,17 @@
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\concrt140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\cvextern.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\msvcp140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\opencv_ffmpeg330_64.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\vcruntime140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\concrt140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\cvextern.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\msvcp140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\opencv_ffmpeg330.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\vcruntime140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\box.png
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\box_in_scene.png
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\Example.FeatureMatching.exe
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\Example.FeatureMatching.pdb
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\FeatureMatching\obj\Debug\FeatureMatching.csproj.CoreCompileInputs.cache
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\FeatureMatching\obj\Debug\Example.FeatureMatching.exe
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\FeatureMatching\obj\Debug\Example.FeatureMatching.pdb

@@ -1,0 +1,16 @@
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\concrt140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\cvextern.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\msvcp140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\opencv_ffmpeg330_64.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x64\vcruntime140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\concrt140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\cvextern.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\msvcp140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\opencv_ffmpeg330.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\x86\vcruntime140.dll
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\pedestrian.png
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\Example.PedestrianDetection.exe
+C:\Emgu\emgucv-windesktop 3.3.0.2824\bin\Example.PedestrianDetection.pdb
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\PedestrianDetection\obj\Debug\PedestrianDetection.csproj.CoreCompileInputs.cache
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\PedestrianDetection\obj\Debug\Example.PedestrianDetection.exe
+C:\Emgu\emgucv-windesktop 3.3.0.2824\Emgu.CV.Example\PedestrianDetection\obj\Debug\Example.PedestrianDetection.pdb

@@ -1,7 +1,0 @@
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\bin\Debug\Grab_UsingGrabLoopThread.exe
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\bin\Debug\Grab_UsingGrabLoopThread.pdb
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\bin\Debug\Basler.Pylon.dll
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\bin\Debug\Basler.Pylon.xml
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\obj\Debug\Grab_UsingGrabLoopThread.csproj.CoreCompileInputs.cache
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\obj\Debug\Grab_UsingGrabLoopThread.exe
-C:\Program Files\Basler\pylon 5\Development\Samples\C#\Basler.Pylon\Grab_UsingGrabLoopThread\obj\Debug\Grab_UsingGrabLoopThread.pdb
