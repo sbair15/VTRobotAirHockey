@@ -35,7 +35,9 @@ namespace AirHockeyApp
         GameMode gameMode = GameMode.Diagnostics;
 
         //PixyCam pixyCam;
-       // Robot robot;
+        //********Added here in order to get the image process results
+        CameraCapture baslerCam;
+        Robot robot;
 
         Line trajectoryLine;
         List<Line> lineList;
@@ -54,21 +56,22 @@ namespace AirHockeyApp
         {
             this.InitializeComponent();
 
-          //  CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
+            //  CoordinateHelper.Initialize(mainCanvas.Width, mainCanvas.Height);
 
             //pixyCam = new PixyCam();
-           // robot = new Robot();
+            baslerCam = new CameraCapture();
+            robot = new Robot();
 
             // Initialize robot's max speed and acceleration
-         //   robot.StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
-        //    robot.StepperY.MaxSpeed = Config.MOTOR_Y_MAX_SPEED;
+            robot.StepperX.MaxSpeed = Config.MOTOR_X_MAX_SPEED;
+            robot.StepperY.MaxSpeed = Config.MOTOR_Y_MAX_SPEED;
 
-         //   robot.StepperX.Acceleration = Config.MOTOR_X_ACCELERATION;
-         //   robot.StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
+            robot.StepperX.Acceleration = Config.MOTOR_X_ACCELERATION;
+            robot.StepperY.Acceleration = Config.MOTOR_Y_ACCELERATION;
 
             // Adds event listeners for when a goal is scored
-           // robot.HumanGoalSensorTriggered += Robot_HumanGoalSensorTriggered;
-           // robot.RobotGoalSensorTriggered += Robot_RobotGoalSensorTriggered;
+           robot.HumanGoalSensorTriggered += Robot_HumanGoalSensorTriggered;
+           robot.RobotGoalSensorTriggered += Robot_RobotGoalSensorTriggered;
 
             initializeUI();
         }
@@ -159,16 +162,16 @@ namespace AirHockeyApp
             {
                 case GameMode.Test:
                     mainCanvas.Visibility = Visibility.Visible;
-                    //Console.WriteLine("In Test Game Mode \r\n");
-                  //  robot.StepperX.Debug = true;
-                 //   robot.StepperY.Debug = true;
+                    Console.WriteLine("In Test Game Mode \r\n");
+                    robot.StepperX.Debug = true;
+                    robot.StepperY.Debug = true;
                     mainCanvas.PointerMoved += MainCanvas_PointerMoved;
                     startTestThread();
                     break;
                 case GameMode.Diagnostics:
                     mainCanvas.Visibility = Visibility.Visible;
-               //     robot.StepperX.Debug = true;
-              //      robot.StepperY.Debug = true;
+                    robot.StepperX.Debug = true;
+                    robot.StepperY.Debug = true;
                     startProcessingThread();
                     break;
                 case GameMode.Game:
@@ -236,7 +239,7 @@ namespace AirHockeyApp
             });
         }*/
 
-        /*private void runDecisionThread(Point puckPosition)
+        private void runDecisionThread(Point puckPosition)
         {
             ThreadPool.RunAsync((s) =>
             {
@@ -284,7 +287,7 @@ namespace AirHockeyApp
                     }
                 }
             });
-        }*/
+        }
 
         private void runDecisionThread2(Point puckPosition)
         {
@@ -326,13 +329,13 @@ namespace AirHockeyApp
         #endregion
 
         // Draw the UI
-       /* private void runUIThread()
+        private void runUIThread()
         {
             ThreadPool.RunAsync(async (s) =>
             {
                 while (!stopThread)
                 {
-                    // var puckPosition = robot.AI.GetPuckPosition();
+                    var puckPosition = robot.AI.GetPuckPosition();
                     Point puckPosition = new Point(System.Windows.Forms.Cursor.Position.X, System.Windows.Forms.Cursor.Position.Y);
                     clearLines();
                     //drawDot(puckPosition);
@@ -366,7 +369,7 @@ namespace AirHockeyApp
                     await Task.Delay(1);
                 }
             });
-        }*/
+        }
 
         private void startProcessingThread()
         {
@@ -407,9 +410,9 @@ namespace AirHockeyApp
                     currentTimeMilliseconds = Global.Stopwatch.ElapsedMilliseconds;
 
                     // Check for new block every 20 ms, since the camera is 50hz
-                    //if ((currentTimeMilliseconds - previousTimeMilliseconds) > 20 || previousTimeMilliseconds == -1)
-                    //{
-                    /*    // Start new thread to poll camera so that we reduce the chance of getting jitter
+                    if ((currentTimeMilliseconds - previousTimeMilliseconds) > 20 || previousTimeMilliseconds == -1)
+                    {
+                        // Start new thread to poll camera so that we reduce the chance of getting jitter
                         ThreadPool.RunAsync((s1) =>
                         {
                             try
@@ -443,7 +446,7 @@ namespace AirHockeyApp
                             }
                         }, WorkItemPriority.Low);
 
-                       */
+                     
                     previousTimeMilliseconds = currentTimeMilliseconds;
 
 
@@ -461,18 +464,12 @@ namespace AirHockeyApp
             });
         }
 
-        //private Point getPuckPosition(ObjectBlock block)
-        //{
-        //    if (block != null)
-        //    {
-        //        if (block.Signature == 1 && block.Width >= 5 && block.Height >= 5)
-        //        {
-        //            return CoordinateHelper.TranslatePoint(block.X, block.Y);
-        //        }
-        //    }
-
-        //    return CoordinateHelper.INVALID_POINT;
-        //}
+        //********NEED TO ADD CODE THAT GETS THE CURRENT PUCK POSITION HERE**********
+        private Point getPuckPosition()
+        {
+            //Return current puck position 
+             return CoordinateHelper.TranslatePoint(block.X, block.Y);
+        }
 
         #region UI Functions
 

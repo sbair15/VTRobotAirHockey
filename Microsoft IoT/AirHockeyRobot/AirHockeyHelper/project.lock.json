@@ -15490,12 +15490,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\VTAirHockeyRobot\\source\\repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj",
+      "projectUniqueName": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj",
       "projectName": "AirHockeyHelper",
-      "projectPath": "C:\\Users\\VTAirHockeyRobot\\source\\repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj",
-      "projectJsonPath": "C:\\Users\\VTAirHockeyRobot\\source\\repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\project.json",
+      "projectPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\AirHockeyHelper.csproj",
+      "projectJsonPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\project.json",
       "packagesPath": "C:\\Users\\VTAirHockeyRobot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VTAirHockeyRobot\\source\\repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\obj\\",
+      "outputPath": "C:\\Users\\VTAirHockeyRobot\\Source\\Repos\\VTRobotAirHockey2\\Microsoft IoT\\AirHockeyRobot\\AirHockeyHelper\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\VTAirHockeyRobot\\AppData\\Roaming\\NuGet\\NuGet.Config",
